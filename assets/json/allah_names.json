@@ -1,0 +1,526 @@
+[
+    {
+        "id": 1,
+        "arabic": "الرَّحْمَـٰنُ",
+        "transliteration": "Ar-Rahmaan",
+        "urdu_meaning": "بے حد رحم کرنے والا"
+    },
+    {
+        "id": 2,
+        "arabic": "الرَّحِيمُ",
+        "transliteration": "Ar-Raheem",
+        "urdu_meaning": "نہایت مہربان"
+    },
+    {
+        "id": 3,
+        "arabic": "الْمَلِكُ",
+        "transliteration": "Al-Malik",
+        "urdu_meaning": "حقیقی بادشاہ"
+    },
+    {
+        "id": 4,
+        "arabic": "الْقُدُّوسُ",
+        "transliteration": "Al-Quddus",
+        "urdu_meaning": "ہر عیب سے پاک"
+    },
+    {
+        "id": 5,
+        "arabic": "السَّلاَمُ",
+        "transliteration": "As-Salam",
+        "urdu_meaning": "سلامتی دینے والا"
+    },
+    {
+        "id": 6,
+        "arabic": "الْمُؤْمِنُ",
+        "transliteration": "Al-Mu'min",
+        "urdu_meaning": "امن و امان دینے والا"
+    },
+    {
+        "id": 7,
+        "arabic": "الْمُهَيْمِنُ",
+        "transliteration": "Al-Muhaymin",
+        "urdu_meaning": "پوری نگہبانی کرنے والا"
+    },
+    {
+        "id": 8,
+        "arabic": "الْعَزِيزُ",
+        "transliteration": "Al-Aziz",
+        "urdu_meaning": "غالب اور زبردست"
+    },
+    {
+        "id": 9,
+        "arabic": "الْجَبَّارُ",
+        "transliteration": "Al-Jabbar",
+        "urdu_meaning": "ٹوٹے ہوئے کام سنوارنے والا"
+    },
+    {
+        "id": 10,
+        "arabic": "الْمُتَكَبِّرُ",
+        "transliteration": "Al-Mutakabbir",
+        "urdu_meaning": "بڑائی اور عظمت والا"
+    },
+    {
+        "id": 11,
+        "arabic": "الْخَالِقُ",
+        "transliteration": "Al-Khaliq",
+        "urdu_meaning": "پیدا کرنے والا"
+    },
+    {
+        "id": 12,
+        "arabic": "الْبَارِئُ",
+        "transliteration": "Al-Bari",
+        "urdu_meaning": "ٹھیک بنانے والا"
+    },
+    {
+        "id": 13,
+        "arabic": "الْمُصَوِّرُ",
+        "transliteration": "Al-Musawwir",
+        "urdu_meaning": "صورت گری کرنے والا"
+    },
+    {
+        "id": 14,
+        "arabic": "الْغَفَّارُ",
+        "transliteration": "Al-Ghaffar",
+        "urdu_meaning": "بہت بخشنے والا"
+    },
+    {
+        "id": 15,
+        "arabic": "الْقَهَّارُ",
+        "transliteration": "Al-Qahhar",
+        "urdu_meaning": "سب پر غالب"
+    },
+    {
+        "id": 16,
+        "arabic": "الْوَهَّابُ",
+        "transliteration": "Al-Wahhab",
+        "urdu_meaning": "بے حساب دینے والا"
+    },
+    {
+        "id": 17,
+        "arabic": "الرَّزَّاقُ",
+        "transliteration": "Ar-Razzaq",
+        "urdu_meaning": "رزق دینے والا"
+    },
+    {
+        "id": 18,
+        "arabic": "الْفَتَّاحُ",
+        "transliteration": "Al-Fattah",
+        "urdu_meaning": "کشائش فرمانے والا"
+    },
+    {
+        "id": 19,
+        "arabic": "الْعَلِيمُ",
+        "transliteration": "Al-Aleem",
+        "urdu_meaning": "سب کچھ جاننے والا"
+    },
+    {
+        "id": 20,
+        "arabic": "الْقَابِضُ",
+        "transliteration": "Al-Qabid",
+        "urdu_meaning": "تنگی کرنے والا"
+    },
+    {
+        "id": 21,
+        "arabic": "الْبَاسِطُ",
+        "transliteration": "Al-Basit",
+        "urdu_meaning": "کشادگی کرنے والا"
+    },
+    {
+        "id": 22,
+        "arabic": "الْخَافِضُ",
+        "transliteration": "Al-Khafid",
+        "urdu_meaning": "پست کرنے والا"
+    },
+    {
+        "id": 23,
+        "arabic": "الرَّافِعُ",
+        "transliteration": "Ar-Rafi",
+        "urdu_meaning": "بلند کرنے والا"
+    },
+    {
+        "id": 24,
+        "arabic": "الْمُعِزُّ",
+        "transliteration": "Al-Mu'izz",
+        "urdu_meaning": "عزت دینے والا"
+    },
+    {
+        "id": 25,
+        "arabic": "الْمُذِلُّ",
+        "transliteration": "Al-Mudhill",
+        "urdu_meaning": "ذلت دینے والا"
+    },
+    {
+        "id": 26,
+        "arabic": "السَّمِيعُ",
+        "transliteration": "As-Sami",
+        "urdu_meaning": "سب کچھ سننے والا"
+    },
+    {
+        "id": 27,
+        "arabic": "الْبَصِيرُ",
+        "transliteration": "Al-Basir",
+        "urdu_meaning": "سب کچھ دیکھنے والا"
+    },
+    {
+        "id": 28,
+        "arabic": "الْحَكَمُ",
+        "transliteration": "Al-Hakam",
+        "urdu_meaning": "فیصلہ کرنے والا"
+    },
+    {
+        "id": 29,
+        "arabic": "الْعَدْلُ",
+        "transliteration": "Al-Adl",
+        "urdu_meaning": "انصاف کرنے والا"
+    },
+    {
+        "id": 30,
+        "arabic": "اللَّطِيفُ",
+        "transliteration": "Al-Lateef",
+        "urdu_meaning": "بہت باریک بین اور مہربان"
+    },
+    {
+        "id": 31,
+        "arabic": "الْخَبِيرُ",
+        "transliteration": "Al-Khabeer",
+        "urdu_meaning": "خبر رکھنے والا"
+    },
+    {
+        "id": 32,
+        "arabic": "الْحَلِيمُ",
+        "transliteration": "Al-Haleem",
+        "urdu_meaning": "بردبار اور نرم خو"
+    },
+    {
+        "id": 33,
+        "arabic": "الْعَظِيمُ",
+        "transliteration": "Al-Azeem",
+        "urdu_meaning": "عظمت والا"
+    },
+    {
+        "id": 34,
+        "arabic": "الْغَفُورُ",
+        "transliteration": "Al-Ghafoor",
+        "urdu_meaning": "بہت معاف کرنے والا"
+    },
+    {
+        "id": 35,
+        "arabic": "الشَّكُورُ",
+        "transliteration": "Ash-Shakoor",
+        "urdu_meaning": "قدردان"
+    },
+    {
+        "id": 36,
+        "arabic": "الْعَلِيُّ",
+        "transliteration": "Al-Aliyy",
+        "urdu_meaning": "سب سے بلند"
+    },
+    {
+        "id": 37,
+        "arabic": "الْكَبِيرُ",
+        "transliteration": "Al-Kabeer",
+        "urdu_meaning": "سب سے بڑا"
+    },
+    {
+        "id": 38,
+        "arabic": "الْحَفِيظُ",
+        "transliteration": "Al-Hafiz",
+        "urdu_meaning": "حفاظت کرنے والا"
+    },
+    {
+        "id": 39,
+        "arabic": "الْمُقِيتُ",
+        "transliteration": "Al-Muqeet",
+        "urdu_meaning": "روزی دینے والا"
+    },
+    {
+        "id": 40,
+        "arabic": "الْحَسِيبُ",
+        "transliteration": "Al-Haseeb",
+        "urdu_meaning": "کفایت کرنے والا"
+    },
+    {
+        "id": 41,
+        "arabic": "الْجَلِيلُ",
+        "transliteration": "Al-Jaleel",
+        "urdu_meaning": "بزرگ اور عالی شان"
+    },
+    {
+        "id": 42,
+        "arabic": "الْمُجِيبُ",
+        "transliteration": "Al-Mujeeb",
+        "urdu_meaning": "دعا قبول کرنے والا"
+    },
+    {
+        "id": 43,
+        "arabic": "الْوَاسِعُ",
+        "transliteration": "Al-Wasi",
+        "urdu_meaning": "کشادگی والا"
+    },
+    {
+        "id": 44,
+        "arabic": "الْحَكِيمُ",
+        "transliteration": "Al-Hakeem",
+        "urdu_meaning": "حکمت والا"
+    },
+    {
+        "id": 45,
+        "arabic": "الْوَدُودُ",
+        "transliteration": "Al-Wadood",
+        "urdu_meaning": "بہت محبت کرنے والا"
+    },
+    {
+        "id": 46,
+        "arabic": "الْمَجِيدُ",
+        "transliteration": "Al-Majeed",
+        "urdu_meaning": "بزرگی والا"
+    },
+    {
+        "id": 47,
+        "arabic": "الْبَاعِثُ",
+        "transliteration": "Al-Ba'ith",
+        "urdu_meaning": "اٹھانے والا"
+    },
+    {
+        "id": 48,
+        "arabic": "الشَّهِيدُ",
+        "transliteration": "Ash-Shaheed",
+        "urdu_meaning": "حاضر و ناظر"
+    },
+    { "id": 49, "arabic": "الْحَقُّ", "transliteration": "Al-Haqq", "urdu_meaning": "سچا" },
+    { "id": 50, "arabic": "الْوَكِيلُ", "transliteration": "Al-Wakeel", "urdu_meaning": "کارساز" },
+    { "id": 51, "arabic": "الْقَوِيُّ", "transliteration": "Al-Qawiyy", "urdu_meaning": "زور آور" },
+    { "id": 52, "arabic": "الْمَتِينُ", "transliteration": "Al-Manteen", "urdu_meaning": "مضبوط" },
+    { "id": 53, "arabic": "الْوَلِيُّ", "transliteration": "Al-Waliyy", "urdu_meaning": "مددگار" },
+    {
+        "id": 54,
+        "arabic": "الْحَمِيدُ",
+        "transliteration": "Al-Hameed",
+        "urdu_meaning": "تعریف والا"
+    },
+    {
+        "id": 55,
+        "arabic": "الْمُحْصِي",
+        "transliteration": "Al-Muhsi",
+        "urdu_meaning": "شمار کرنے والا"
+    },
+    {
+        "id": 56,
+        "arabic": "الْمُبْدِئُ",
+        "transliteration": "Al-Mubdi",
+        "urdu_meaning": "پہلی بار پیدا کرنے والا"
+    },
+    {
+        "id": 57,
+        "arabic": "الْمُعِيدُ",
+        "transliteration": "Al-Mu'id",
+        "urdu_meaning": "دوبارہ پیدا کرنے والا"
+    },
+    {
+        "id": 58,
+        "arabic": "الْمُحْيِي",
+        "transliteration": "Al-Muhyi",
+        "urdu_meaning": "زندگی دینے والا"
+    },
+    {
+        "id": 59,
+        "arabic": "الْمُمِيتُ",
+        "transliteration": "Al-Mumeet",
+        "urdu_meaning": "موت دینے والا"
+    },
+    { "id": 60, "arabic": "الْحَيُّ", "transliteration": "Al-Hayy", "urdu_meaning": "زندہ جاوید" },
+    {
+        "id": 61,
+        "arabic": "الْقَيُّومُ",
+        "transliteration": "Al-Qayyoom",
+        "urdu_meaning": "سب کا تھامنے والا"
+    },
+    {
+        "id": 62,
+        "arabic": "الْوَاجِدُ",
+        "transliteration": "Al-Wajid",
+        "urdu_meaning": "پانے والا"
+    },
+    {
+        "id": 63,
+        "arabic": "الْمَاجِدُ",
+        "transliteration": "Al-Majid",
+        "urdu_meaning": "بزرگی والا"
+    },
+    { "id": 64, "arabic": "الْوَاحِدُ", "transliteration": "Al-Wahid", "urdu_meaning": "اکیلا" },
+    { "id": 65, "arabic": "الأَحَدُ", "transliteration": "Al-Ahad", "urdu_meaning": "ایک" },
+    { "id": 66, "arabic": "الصَّمَدُ", "transliteration": "As-Samad", "urdu_meaning": "بے نیاز" },
+    {
+        "id": 67,
+        "arabic": "الْقَادِرُ",
+        "transliteration": "Al-Qadir",
+        "urdu_meaning": "قدرت والا"
+    },
+    {
+        "id": 68,
+        "arabic": "الْمُقْتَدِرُ",
+        "transliteration": "Al-Muqtadir",
+        "urdu_meaning": "کامل قدرت والا"
+    },
+    {
+        "id": 69,
+        "arabic": "الْمُقَدِّمُ",
+        "transliteration": "Al-Muqaddim",
+        "urdu_meaning": "آگے کرنے والا"
+    },
+    {
+        "id": 70,
+        "arabic": "الْمُؤَخِّرُ",
+        "transliteration": "Al-Mu'akhkhir",
+        "urdu_meaning": "پیچھے کرنے والا"
+    },
+    {
+        "id": 71,
+        "arabic": "الأَوَّلُ",
+        "transliteration": "Al-Awwal",
+        "urdu_meaning": "سب سے پہلا"
+    },
+    { "id": 72, "arabic": "الأَخِرُ", "transliteration": "Al-Akhir", "urdu_meaning": "سب سے اخری" },
+    { "id": 73, "arabic": "الظَّاهِرُ", "transliteration": "Az-Zahir", "urdu_meaning": "ظاہر" },
+    { "id": 74, "arabic": "الْبَاطِنُ", "transliteration": "Al-Batin", "urdu_meaning": "پوشیدہ" },
+    {
+        "id": 75,
+        "arabic": "الْوَالِي",
+        "transliteration": "Al-Wali",
+        "urdu_meaning": "مالک و سرپرست"
+    },
+    {
+        "id": 76,
+        "arabic": "الْمُتَعَالِي",
+        "transliteration": "Al-Muta'ali",
+        "urdu_meaning": "بہت بلند"
+    },
+    {
+        "id": 77,
+        "arabic": "الْبَرُّ",
+        "transliteration": "Al-Barr",
+        "urdu_meaning": "احسان کرنے والا"
+    },
+    {
+        "id": 78,
+        "arabic": "التَّوَّابُ",
+        "transliteration": "At-Tawwab",
+        "urdu_meaning": "توبہ قبول کرنے والا"
+    },
+    {
+        "id": 79,
+        "arabic": "الْمُنْتَقِمُ",
+        "transliteration": "Al-Muntaqim",
+        "urdu_meaning": "بدلہ لینے والا"
+    },
+    {
+        "id": 80,
+        "arabic": "الْعَفُوُّ",
+        "transliteration": "Al-Afuww",
+        "urdu_meaning": "بہت معاف کرنے والا"
+    },
+    {
+        "id": 81,
+        "arabic": "الرَّؤُوفُ",
+        "transliteration": "Ar-Ra'oof",
+        "urdu_meaning": "بہت نرمی کرنے والا"
+    },
+    {
+        "id": 82,
+        "arabic": "مَالِكُ الْمُلْكِ",
+        "transliteration": "Malik-ul-Mulk",
+        "urdu_meaning": "سلطنت کا مالک"
+    },
+    {
+        "id": 83,
+        "arabic": "ذُو الْجَلاَلِ وَالإِكْرَامِ",
+        "transliteration": "Dhul-Jalali-wal-Ikram",
+        "urdu_meaning": "جلال اور انعام والا"
+    },
+    {
+        "id": 84,
+        "arabic": "الْمُقْسِطُ",
+        "transliteration": "Al-Muqsit",
+        "urdu_meaning": "عدل کرنے والا"
+    },
+    {
+        "id": 85,
+        "arabic": "الْجَامِعُ",
+        "transliteration": "Al-Jami",
+        "urdu_meaning": "جمع کرنے والا"
+    },
+    {
+        "id": 86,
+        "arabic": "الْغَنِيُّ",
+        "transliteration": "Al-Ghaniyy",
+        "urdu_meaning": "خود مختیار اور بے نیاز"
+    },
+    {
+        "id": 87,
+        "arabic": "الْمُغْنِي",
+        "transliteration": "Al-Mughni",
+        "urdu_meaning": "بے نیاز کرنے والا"
+    },
+    {
+        "id": 88,
+        "arabic": "الْمَانِعُ",
+        "transliteration": "Al-Mani",
+        "urdu_meaning": "روکنے والا"
+    },
+    {
+        "id": 89,
+        "arabic": "الضَّارُّ",
+        "transliteration": "Ad-Darr",
+        "urdu_meaning": "نقصان پہنچانے والا"
+    },
+    {
+        "id": 90,
+        "arabic": "النَّافِعُ",
+        "transliteration": "An-Nafi",
+        "urdu_meaning": "نفع پہنچانے والا"
+    },
+    {
+        "id": 91,
+        "arabic": "النُّورُ",
+        "transliteration": "An-Noor",
+        "urdu_meaning": "روشن کرنے والا"
+    },
+    {
+        "id": 92,
+        "arabic": "الْهَادِي",
+        "transliteration": "Al-Hadi",
+        "urdu_meaning": "ہدایت دینے والا"
+    },
+    {
+        "id": 93,
+        "arabic": "الْبَدِيعُ",
+        "transliteration": "Al-Badi",
+        "urdu_meaning": "بغیر مثال کے پیدا کرنے والا"
+    },
+    {
+        "id": 94,
+        "arabic": "الْبَاقِي",
+        "transliteration": "Al-Baqi",
+        "urdu_meaning": "ہمیشہ رہنے والا"
+    },
+    { "id": 95, "arabic": "الْوَارِثُ", "transliteration": "Al-Warith", "urdu_meaning": "وارث" },
+    {
+        "id": 96,
+        "arabic": "الرَّشِيدُ",
+        "transliteration": "Ar-Rasheed",
+        "urdu_meaning": "ہدایت دہندہ"
+    },
+    {
+        "id": 97,
+        "arabic": "الصَّبُورُ",
+        "transliteration": "As-Saboor",
+        "urdu_meaning": "بہت صبر کرنے والا"
+    },
+    {
+        "id": 98,
+        "arabic": "الْكَرِيمُ",
+        "transliteration": "Al-Kareem",
+        "urdu_meaning": "بہت کرم کرنے والا"
+    },
+    { "id": 99, "arabic": "الرَّقِيبُ", "transliteration": "Ar-Raqeeb", "urdu_meaning": "نگران" }
+]

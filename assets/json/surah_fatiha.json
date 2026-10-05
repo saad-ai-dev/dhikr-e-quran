@@ -1,0 +1,71 @@
+{
+    "surah_number": 1,
+    "name_arabic": "الفاتحة",
+    "name_urdu": "سورۃ الفاتحہ",
+    "total_ayahs": 7,
+    "ayahs": [
+        {
+            "ayah_number": 1,
+            "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+            "phonetic_keywords": ["bismillah", "ar-rahman", "ar-raheem"],
+            "urdu_text": "شروع الله کا نام لے کر جو بڑا مہربان نہایت رحم والا ہے",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001001.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001001.mp3"
+        },
+        {
+            "ayah_number": 2,
+            "arabic_text": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+            "phonetic_keywords": ["alhamdulillahi", "rabbil", "alameen"],
+            "urdu_text": "سب طرح کی تعریف خدا ہی کو (سزاوار) ہے جو تمام مخلوقات کا پروردگار ہے",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001002.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001002.mp3"
+        },
+        {
+            "ayah_number": 3,
+            "arabic_text": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+            "phonetic_keywords": ["ar-rahman", "ar-raheem"],
+            "urdu_text": "بڑا مہربان نہایت رحم والا",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001003.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001003.mp3"
+        },
+        {
+            "ayah_number": 4,
+            "arabic_text": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+            "phonetic_keywords": ["maliki", "yawmid", "deen"],
+            "urdu_text": "انصاف کے دن کا حاکم",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001004.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001004.mp3"
+        },
+        {
+            "ayah_number": 5,
+            "arabic_text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+            "phonetic_keywords": ["iyyaka", "naabudu", "nastaeen"],
+            "urdu_text": "(اے پروردگار) ہم تیری ہی عبادت کرتے ہیں اور تجھ ہی سے مدد مانگتے ہیں",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001005.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001005.mp3"
+        },
+        {
+            "ayah_number": 6,
+            "arabic_text": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+            "phonetic_keywords": ["ihdinas", "siratal", "mustaqeem"],
+            "urdu_text": "ہم کو سیدھے رستے چلا",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001006.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001006.mp3"
+        },
+        {
+            "ayah_number": 7,
+            "arabic_text": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+            "phonetic_keywords": ["siratalladhina", "an-amta", "ghayril", "maghdubi", "dalin"],
+            "urdu_text": "ان لوگوں کے رستے جن پر تو اپنا فضل وکرم کرتا رہا نہ ان کے جن پر غصے ہوتا رہا اور نہ گمراہوں کے",
+            "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/7.mp3",
+            "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/001007.mp3",
+            "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/001007.mp3"
+        }
+    ]
+}
