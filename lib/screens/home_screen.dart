@@ -5,8 +5,9 @@ import '../widgets/settings_bottom_sheet.dart';
 import '../services/asset_manager.dart';
 import '../services/audio_service.dart';
 import '../services/settings_service.dart';
+import '../localization/app_strings.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   final AssetManager assetManager;
   final AudioService audioService;
   final SettingsService settingsService;
@@ -19,10 +20,18 @@ class HomeScreen extends StatelessWidget {
   });
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String get _lang => widget.settingsService.language;
+  String _s(String key) => S.get(key, _lang);
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('قرآن و ذکر'),
+        title: Text(_s('appTitle')),
       ),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
@@ -33,10 +42,12 @@ class HomeScreen extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _NavItem(icon: Icons.home_rounded, label: 'ہوم', isActive: true, onTap: () {}),
-            _NavItem(icon: Icons.menu_book_rounded, label: 'قرآن', onTap: () => Navigator.pushNamed(context, '/quran')),
-            _NavItem(icon: Icons.star_rounded, label: 'اسماء', onTap: () => Navigator.pushNamed(context, '/names')),
-            _NavItem(icon: Icons.tune_rounded, label: 'ترتیبات', onTap: () => SettingsBottomSheet.show(context, settings: settingsService, onChanged: () {})),
+            _NavItem(icon: Icons.home_rounded, label: _s('home'), isActive: true, onTap: () {}),
+            _NavItem(icon: Icons.menu_book_rounded, label: _s('quran'), onTap: () => Navigator.pushNamed(context, '/quran')),
+            _NavItem(icon: Icons.star_rounded, label: _s('names'), onTap: () => Navigator.pushNamed(context, '/names')),
+            _NavItem(icon: Icons.tune_rounded, label: _s('settings'), onTap: () {
+              SettingsBottomSheet.show(context, settings: widget.settingsService, onChanged: () => setState(() {}));
+            }),
           ],
         ),
       ),
@@ -45,7 +56,6 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           child: Column(
             children: [
-              // Header card with bismillah
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
@@ -70,7 +80,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // Feature grid
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
@@ -80,33 +89,31 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     FeatureCard(
                       icon: Icons.menu_book_rounded,
-                      titleUrdu: 'قرآن پاک',
-                      subtitleUrdu: 'سورۃ الفاتحہ',
+                      titleUrdu: _s('quranPak'),
+                      subtitleUrdu: _s('surahFatiha'),
                       onTap: () => Navigator.pushNamed(context, '/quran'),
                     ),
                     FeatureCard(
                       icon: Icons.star_rounded,
-                      titleUrdu: 'اسماء الحسنیٰ',
-                      subtitleUrdu: '99 نام',
+                      titleUrdu: _s('asmaAlHusna'),
+                      subtitleUrdu: _s('names99'),
                       accentColor: AppTheme.accentGold,
                       onTap: () => Navigator.pushNamed(context, '/names'),
                     ),
                     FeatureCard(
                       icon: Icons.notifications_active_rounded,
-                      titleUrdu: 'یاد دہانی',
-                      subtitleUrdu: 'ہر ${settingsService.reminderInterval} منٹ',
+                      titleUrdu: _s('yaadDehani'),
+                      subtitleUrdu: '${_s('reminderEvery')} ${widget.settingsService.reminderInterval} ${_s('minutes')}',
                       accentColor: const Color(0xFFE67E22),
                       onTap: () => Navigator.pushNamed(context, '/quran'),
                     ),
                     FeatureCard(
                       icon: Icons.tune_rounded,
-                      titleUrdu: 'ترتیبات',
+                      titleUrdu: _s('settings'),
                       accentColor: const Color(0xFF7C3AED),
-                      onTap: () => SettingsBottomSheet.show(
-                        context,
-                        settings: settingsService,
-                        onChanged: () {},
-                      ),
+                      onTap: () {
+                        SettingsBottomSheet.show(context, settings: widget.settingsService, onChanged: () => setState(() {}));
+                      },
                     ),
                   ],
                 ),

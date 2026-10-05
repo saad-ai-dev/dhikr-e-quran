@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../localization/app_strings.dart';
 
 class ReminderPopup {
   static void show(
@@ -8,6 +9,7 @@ class ReminderPopup {
     String? englishText,
     required String urduTranslation,
     required VoidCallback onDismiss,
+    String lang = 'ur',
   }) {
     showDialog(
       context: context,
@@ -21,7 +23,7 @@ class ReminderPopup {
             Text(arabicText, textAlign: TextAlign.center, style: AppTheme.arabicHeading),
             const SizedBox(height: 15),
             if (englishText != null)
-              Text(englishText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, color: AppTheme.primaryColor)),
+              Text(englishText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16, color: AppTheme.secondaryColor)),
             if (englishText != null)
               const SizedBox(height: 10),
             Text(urduTranslation, textAlign: TextAlign.center, style: AppTheme.urduBody),
@@ -33,7 +35,7 @@ class ReminderPopup {
               onDismiss();
               Navigator.pop(ctx);
             },
-            child: const Text("Dismiss"),
+            child: Text(S.get('dismiss', lang)),
           ),
         ],
       ),

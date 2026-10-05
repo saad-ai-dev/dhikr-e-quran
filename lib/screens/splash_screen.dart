@@ -62,8 +62,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'قرآن و ذکر اردو ایپ',
-                    style: TextStyle(fontSize: 16, fontFamily: 'NotoNastaliqUrdu', color: Colors.white.withOpacity(0.6)),
+                    'Quran & Dhikr App',
+                    style: TextStyle(fontSize: 14, fontFamily: 'NotoNastaliqUrdu', color: Colors.white.withOpacity(0.5)),
                   ),
                   const SizedBox(height: 40),
                   SizedBox(

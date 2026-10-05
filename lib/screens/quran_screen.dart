@@ -12,6 +12,7 @@ import '../widgets/ayah_card.dart';
 import '../widgets/reminder_popup.dart';
 import '../widgets/settings_bottom_sheet.dart';
 import '../theme/app_theme.dart';
+import '../localization/app_strings.dart';
 
 class QuranScreen extends StatefulWidget {
   final AssetManager assetManager;
@@ -31,7 +32,10 @@ class QuranScreen extends StatefulWidget {
 
 class _QuranScreenState extends State<QuranScreen> {
   bool _isLoading = true;
-  String _statusMessage = "Initializing...";
+  late String _statusMessage;
+
+  String get _lang => widget.settingsService.language;
+  String _s(String key) => S.get(key, _lang);
   Timer? _reminderTimer;
 
   AssetManager get assets => widget.assetManager;
@@ -41,6 +45,7 @@ class _QuranScreenState extends State<QuranScreen> {
   @override
   void initState() {
     super.initState();
+    _statusMessage = S.get('initializing', widget.settingsService.language);
     _loadData();
     _startReminderTimer();
   }
@@ -83,6 +88,7 @@ class _QuranScreenState extends State<QuranScreen> {
         englishText: name.transliteration,
         urduTranslation: name.urduMeaning,
         onDismiss: () => audio.stopAll(),
+        lang: _lang,
       );
       await audio.playNameAudio(nameIndex: idx);
     } else {
@@ -94,6 +100,7 @@ class _QuranScreenState extends State<QuranScreen> {
         arabicText: ayah.arabicText,
         urduTranslation: ayah.urduText,
         onDismiss: () => audio.stopAll(),
+        lang: _lang,
       );
       _playAyah(ayah);
     }
@@ -107,11 +114,11 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   void _copyAyah(Ayah ayah) {
-    final ref = '${assets.surahData!.nameUrdu} - آیت ${ayah.ayahNumber}';
+    final ref = '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
     Clipboard.setData(ClipboardData(text: '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref'));
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('آیت ${ayah.ayahNumber} کاپی ہو گئی', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+        content: Text('${_s('ayah')} ${ayah.ayahNumber} ${_s('ayahCopied')}', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 2),
       ),
@@ -119,7 +126,7 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   Future<void> _shareAyah(Ayah ayah) async {
-    final ref = '${assets.surahData!.nameUrdu} - آیت ${ayah.ayahNumber}';
+    final ref = '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
     final text = '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref';
     final List<XFile> files = [];
 
@@ -144,7 +151,7 @@ class _QuranScreenState extends State<QuranScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          assets.isReady ? assets.surahData!.nameUrdu : 'قرآن پاک',
+          assets.isReady ? assets.surahData!.nameUrdu : _s('quranPak'),
           style: const TextStyle(fontFamily: 'NotoNastaliqUrdu'),
         ),
         actions: [
@@ -176,11 +183,11 @@ class _QuranScreenState extends State<QuranScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Reminder: Every ${settings.reminderInterval} mins",
-                          style: const TextStyle(fontWeight: FontWeight.bold)),
+                      Text("${_s('reminderLabel')} ${settings.reminderInterval} ${_s('minutes')}",
+                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
                       ElevatedButton.icon(
                         icon: const Icon(Icons.notifications_active, size: 18),
-                        label: const Text("Test"),
+                        label: Text(_s('test')),
                         onPressed: _triggerReminder,
                       ),
                     ],
@@ -194,6 +201,7 @@ class _QuranScreenState extends State<QuranScreen> {
                       final ayah = assets.surahData!.ayahs[i];
                       return AyahCard(
                         ayah: ayah,
+                        lang: _lang,
                         onTap: () => _playAyah(ayah),
                         onCopy: () => _copyAyah(ayah),
                         onShare: () => _shareAyah(ayah),

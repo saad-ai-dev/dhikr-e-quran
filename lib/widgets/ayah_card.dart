@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import '../models/ayah.dart';
 import '../theme/app_theme.dart';
+import '../localization/app_strings.dart';
 
 class AyahCard extends StatelessWidget {
   final Ayah ayah;
+  final String lang;
   final VoidCallback onTap;
   final VoidCallback onCopy;
   final VoidCallback onShare;
@@ -11,6 +13,7 @@ class AyahCard extends StatelessWidget {
   const AyahCard({
     super.key,
     required this.ayah,
+    required this.lang,
     required this.onTap,
     required this.onCopy,
     required this.onShare,
@@ -21,7 +24,7 @@ class AyahCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       child: InkWell(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
         onTap: onTap,
         child: Padding(
           padding: const EdgeInsets.all(14),
@@ -31,9 +34,9 @@ class AyahCard extends StatelessWidget {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _ActionIcon(icon: Icons.copy_rounded, tooltip: 'نقل کریں', onPressed: onCopy),
+                  _ActionIcon(icon: Icons.copy_rounded, tooltip: S.get('copy', lang), onPressed: onCopy),
                   const SizedBox(height: 4),
-                  _ActionIcon(icon: Icons.share_rounded, tooltip: 'شیئر کریں', onPressed: onShare),
+                  _ActionIcon(icon: Icons.share_rounded, tooltip: S.get('share', lang), onPressed: onShare),
                 ],
               ),
               const SizedBox(width: 10),

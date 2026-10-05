@@ -7,6 +7,7 @@ import '../models/allah_name.dart';
 import '../services/asset_manager.dart';
 import '../services/audio_service.dart';
 import '../theme/app_theme.dart';
+import '../localization/app_strings.dart';
 
 class NamesScreen extends StatefulWidget {
   final AssetManager assetManager;
@@ -25,6 +26,8 @@ class NamesScreen extends StatefulWidget {
 class _NamesScreenState extends State<NamesScreen> {
   int? _playingId;
   bool _isLoading = true;
+
+  String _s(String key) => S.get(key, 'ur'); // Names screen always uses Urdu for Islamic terms
 
   @override
   void initState() {
@@ -57,7 +60,7 @@ class _NamesScreenState extends State<NamesScreen> {
     Clipboard.setData(ClipboardData(text: text));
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('${name.transliteration} کاپی ہو گیا', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+        content: Text('${name.transliteration} ${_s('nameCopied')}', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 2),
       ),
@@ -121,14 +124,14 @@ class _NamesScreenState extends State<NamesScreen> {
                             const SizedBox(height: 6),
                             IconButton(
                               icon: const Icon(Icons.copy_rounded, size: 16, color: AppTheme.secondaryColor),
-                              tooltip: 'نقل کریں',
+                              tooltip: _s('copy'),
                               onPressed: () => _copyName(name),
                               constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
                               padding: EdgeInsets.zero,
                             ),
                             IconButton(
                               icon: const Icon(Icons.share_rounded, size: 16, color: AppTheme.secondaryColor),
-                              tooltip: 'شیئر کریں',
+                              tooltip: _s('share'),
                               onPressed: () => _shareName(name),
                               constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
                               padding: EdgeInsets.zero,

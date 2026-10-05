@@ -28,6 +28,9 @@ class SettingsService {
   bool get repeatSingleName => _prefs.getBool(ReminderService.keyRepeatSingleName) ?? false;
   set repeatSingleName(bool value) => _prefs.setBool(ReminderService.keyRepeatSingleName, value);
 
+  String get language => _prefs.getString('app_language') ?? 'en';
+  set language(String value) => _prefs.setString('app_language', value);
+
   static Future<void> requestAppPermissions() async {
     if (!Platform.isAndroid) return;
     await Permission.notification.request();
