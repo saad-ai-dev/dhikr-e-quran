@@ -9,6 +9,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:share_plus/share_plus.dart';
 import 'services/reminder_service.dart';
 
 void main() {
@@ -216,6 +217,76 @@ class _MasterHomePageState extends State<MasterHomePage> {
     }
   }
 
+  // Copy Ayah to Clipboard
+  void _copyAyahToClipboard(Map<String, dynamic> ayah) {
+    final String arabicText = ayah['arabic_text'];
+    final String urduText = ayah['urdu_text'];
+    final int ayahNumber = ayah['ayah_number'];
+    final String surahName = surahData!['name_urdu'];
+
+    final String copyText = '$arabicText\n\n$urduText\n\n$surahName - آیت $ayahNumber';
+
+    Clipboard.setData(ClipboardData(text: copyText));
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('آیت $ayahNumber کاپی ہو گئی', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+        duration: const Duration(seconds: 2),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  // Share Ayah Audio + Translation
+  Future<void> _shareAyah(Map<String, dynamic> ayah) async {
+    final int ayahNumber = ayah['ayah_number'];
+    final String arabicText = ayah['arabic_text'];
+    final String urduText = ayah['urdu_text'];
+    final String surahName = surahData!['name_urdu'];
+
+    final String referenceText = '$arabicText\n\n$urduText\n\n$surahName - آیت $ayahNumber';
+
+    final List<XFile> audioFiles = [];
+
+    if (localAudioMap.containsKey(ayahNumber)) {
+      final String arabicPath = localAudioMap[ayahNumber]!;
+      if (await File(arabicPath).exists()) {
+        audioFiles.add(XFile(arabicPath, mimeType: 'audio/mpeg'));
+      }
+    }
+
+    if (localUrduAudioMap.containsKey(ayahNumber)) {
+      final String urduPath = localUrduAudioMap[ayahNumber]!;
+      if (await File(urduPath).exists()) {
+        audioFiles.add(XFile(urduPath, mimeType: 'audio/mpeg'));
+      }
+    }
+
+    if (audioFiles.isNotEmpty) {
+      await Share.shareXFiles(
+        audioFiles,
+        text: referenceText,
+        subject: '$surahName - آیت $ayahNumber',
+      );
+    } else {
+      await Share.share(
+        referenceText,
+        subject: '$surahName - آیت $ayahNumber',
+      );
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('آڈیو فائلز دستیاب نہیں، صرف متن شیئر کیا گیا',
+                style: TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+            duration: Duration(seconds: 3),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
+    }
+  }
+
   // Timer & Reminder Controller
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
@@ -295,13 +366,13 @@ class _MasterHomePageState extends State<MasterHomePage> {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(arabicText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
+            Text(arabicText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, fontFamily: 'ScheherazadeNew')),
             const SizedBox(height: 15),
             if (englishText != null)
               Text(englishText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, color: Colors.teal)),
             if (englishText != null)
               const SizedBox(height: 10),
-            Text(urduTranslation, textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, color: Colors.teal)),
+            Text(urduTranslation, textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, color: Colors.teal, fontFamily: 'NotoNastaliqUrdu')),
           ],
         ),
         actions: [
@@ -368,24 +439,52 @@ class _MasterHomePageState extends State<MasterHomePage> {
                       var ayah = surahData!['ayahs'][index];
                       return Card(
                         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        child: ListTile(
-                          contentPadding: const EdgeInsets.all(15),
-                          title: Text(
-                            ayah['arabic_text'],
-                            textAlign: TextAlign.right,
-                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                          ),
-                          subtitle: Padding(
-                            padding: const EdgeInsets.only(top: 10),
-                            child: Text(
-                              ayah['urdu_text'],
-                              textAlign: TextAlign.right,
-                              style: const TextStyle(fontSize: 18, color: Colors.teal),
-                            ),
-                          ),
+                        child: InkWell(
                           onTap: () => _executeAudioToTranslationPipeline(
                             ayah['ayah_number'],
                             ayah['urdu_text'],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    IconButton(
+                                      icon: const Icon(Icons.copy_rounded, size: 20, color: Colors.teal),
+                                      tooltip: 'نقل کریں',
+                                      onPressed: () => _copyAyahToClipboard(ayah),
+                                    ),
+                                    IconButton(
+                                      icon: const Icon(Icons.share_rounded, size: 20, color: Colors.teal),
+                                      tooltip: 'شیئر کریں',
+                                      onPressed: () => _shareAyah(ayah),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        ayah['arabic_text'],
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, fontFamily: 'ScheherazadeNew'),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Text(
+                                        ayah['urdu_text'],
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(fontSize: 18, color: Colors.teal, fontFamily: 'NotoNastaliqUrdu'),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       );

@@ -16,6 +16,7 @@ dependencies:
     path_provider: ^2.1.2
     shared_preferences: ^2.2.2
     permission_handler: ^11.3.1
+    share_plus: ^7.2.2
 
 dev_dependencies:
     flutter_test:
@@ -29,3 +30,10 @@ flutter:
         - assets/json/allah_names.json
         - assets/audio/names/
         - assets/audio/fatiha/
+    fonts:
+        - family: NotoNastaliqUrdu
+          fonts:
+              - asset: assets/fonts/NotoNastaliqUrdu-Regular.ttf
+        - family: ScheherazadeNew
+          fonts:
+              - asset: assets/fonts/ScheherazadeNew-Regular.ttf
