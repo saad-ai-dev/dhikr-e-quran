@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../services/settings_service.dart';
-import '../services/reminder_service.dart';
 import '../theme/app_theme.dart';
 import '../localization/app_strings.dart';
 
@@ -32,25 +31,12 @@ class _SettingsContent extends StatefulWidget {
 }
 
 class _SettingsContentState extends State<_SettingsContent> {
-  late ReminderType _type;
-  late bool _repeatVerse;
-  late bool _repeatName;
   late String _lang;
 
   @override
   void initState() {
     super.initState();
-    _type = widget.settings.selectedType;
-    _repeatVerse = widget.settings.repeatSingleVerse;
-    _repeatName = widget.settings.repeatSingleName;
     _lang = widget.settings.language;
-  }
-
-  void _save() {
-    widget.settings.selectedType = _type;
-    widget.settings.repeatSingleVerse = _repeatVerse;
-    widget.settings.repeatSingleName = _repeatName;
-    widget.onChanged();
   }
 
   String _s(String key) => S.get(key, _lang);
@@ -86,34 +72,21 @@ class _SettingsContentState extends State<_SettingsContent> {
               ),
             ),
           ),
-          const Divider(),
-          RadioListTile<ReminderType>(
-            title: Text(_s('namesOfAllah'), style: const TextStyle(fontSize: 14)),
-            value: ReminderType.allahNames,
-            groupValue: _type,
-            onChanged: (v) { setState(() => _type = v!); _save(); },
-          ),
-          RadioListTile<ReminderType>(
-            title: Text(_s('quranSequence'), style: const TextStyle(fontSize: 14)),
-            value: ReminderType.quranVerse,
-            groupValue: _type,
-            onChanged: (v) { setState(() => _type = v!); _save(); },
-          ),
-          const SizedBox(height: 8),
-          if (_type == ReminderType.quranVerse)
-            SwitchListTile(
-              title: Text(_s('repeatVerse'), style: const TextStyle(fontSize: 14)),
-              subtitle: Text(_s('repeatVerseDesc'), style: const TextStyle(fontSize: 12)),
-              value: _repeatVerse,
-              onChanged: (v) { setState(() => _repeatVerse = v); _save(); },
+          const SizedBox(height: 16),
+          // Reminder settings link
+          ListTile(
+            leading: const Icon(Icons.notifications_active_rounded, color: AppTheme.secondaryColor, size: 20),
+            title: Text(_s('reminders'), style: const TextStyle(fontSize: 14)),
+            subtitle: Text(
+              '${_s('reminderEvery')} ${widget.settings.reminderInterval} ${_s('minutes')}',
+              style: const TextStyle(fontSize: 12, color: AppTheme.textMuted),
             ),
-          if (_type == ReminderType.allahNames)
-            SwitchListTile(
-              title: Text(_s('repeatName'), style: const TextStyle(fontSize: 14)),
-              subtitle: Text(_s('repeatNameDesc'), style: const TextStyle(fontSize: 12)),
-              value: _repeatName,
-              onChanged: (v) { setState(() => _repeatName = v); _save(); },
-            ),
+            trailing: const Icon(Icons.chevron_right, size: 20),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/reminder');
+            },
+          ),
           const SizedBox(height: 16),
           ElevatedButton(
             style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(44)),

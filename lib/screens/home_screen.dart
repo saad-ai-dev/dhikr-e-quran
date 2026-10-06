@@ -101,11 +101,18 @@ class _HomeScreenState extends State<HomeScreen> {
                       onTap: () => Navigator.pushNamed(context, '/names'),
                     ),
                     FeatureCard(
+                      icon: Icons.touch_app_rounded,
+                      titleUrdu: _s('tasbeeh'),
+                      subtitleUrdu: _s('tasbeehCounter'),
+                      accentColor: const Color(0xFFE67E22),
+                      onTap: () => Navigator.pushNamed(context, '/tasbeeh'),
+                    ),
+                    FeatureCard(
                       icon: Icons.notifications_active_rounded,
                       titleUrdu: _s('yaadDehani'),
                       subtitleUrdu: '${_s('reminderEvery')} ${widget.settingsService.reminderInterval} ${_s('minutes')}',
-                      accentColor: const Color(0xFFE67E22),
-                      onTap: () => Navigator.pushNamed(context, '/quran'),
+                      accentColor: const Color(0xFF9B59B6),
+                      onTap: () => Navigator.pushNamed(context, '/reminder'),
                     ),
                     FeatureCard(
                       icon: Icons.tune_rounded,

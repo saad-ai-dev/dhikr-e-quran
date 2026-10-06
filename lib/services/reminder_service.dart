@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-enum ReminderType { allahNames, quranVerse }
+enum ReminderType { allahNamesAll, allahNameSingle, quranRandom, quranSingleVerse }
 
 class ReminderService {
   static const String keyIntervalMinutes = 'reminder_interval';
@@ -11,6 +11,8 @@ class ReminderService {
   static const String keyCurrentNameIndex = 'current_name_index';
   static const String keyRepeatSingleVerse = 'repeat_single_verse';
   static const String keyRepeatSingleName = 'repeat_single_name';
+  static const String keySpecificNameIndex = 'specific_name_index';
+  static const String keySpecificVerseIndex = 'specific_verse_index';
 
   static Future<bool> isQuietHoursActive() async {
     final prefs = await SharedPreferences.getInstance();
@@ -29,17 +31,10 @@ class ReminderService {
 
   static Future<int> getNextVerseIndex(int totalVersesInQuran) async {
     final prefs = await SharedPreferences.getInstance();
-    bool isRepeatSingle = prefs.getBool(keyRepeatSingleVerse) ?? false;
     int currentIndex = prefs.getInt(keyCurrentVerseIndex) ?? 1;
 
-    if (isRepeatSingle) {
-      return currentIndex;
-    }
-
     int nextIndex = currentIndex + 1;
-    if (nextIndex > totalVersesInQuran) {
-      nextIndex = 1;
-    }
+    if (nextIndex > totalVersesInQuran) nextIndex = 1;
 
     await prefs.setInt(keyCurrentVerseIndex, nextIndex);
     return currentIndex;
@@ -47,12 +42,7 @@ class ReminderService {
 
   static Future<int> getNextNameIndex() async {
     final prefs = await SharedPreferences.getInstance();
-    bool isRepeatSingle = prefs.getBool(keyRepeatSingleName) ?? false;
     int currentIndex = prefs.getInt(keyCurrentNameIndex) ?? 1;
-
-    if (isRepeatSingle) {
-      return currentIndex;
-    }
 
     int nextIndex = (currentIndex % 99) + 1;
     await prefs.setInt(keyCurrentNameIndex, nextIndex);

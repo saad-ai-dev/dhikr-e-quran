@@ -54,6 +54,34 @@ class S {
       // Share/Copy
       'audioNotAvailable': 'Audio files not available, text shared only',
       'ayah': 'Ayah',
+
+      // Tasbeeh
+      'tasbeeh': 'Tasbeeh',
+      'tasbeehCounter': 'Dhikr Counter',
+      'tap': 'Tap',
+      'reset': 'Reset',
+      'resetConfirm': 'Reset counter?',
+      'yes': 'Yes',
+      'no': 'No',
+
+      // Reminder Screen
+      'currentStatus': 'Current Settings',
+      'intervalLabel': 'Reminder Interval',
+      'quietHours': 'Quiet Hours',
+      'quietStart': 'Start',
+      'quietEnd': 'End',
+      'reminderContent': 'Reminder Content',
+      'allNames': 'All 99 Names (Sequential)',
+      'specificName': 'Specific Name',
+      'randomVerses': 'Random Quran Verses',
+      'specificVerse': 'Specific Verse',
+      'testReminder': 'Test Reminder',
+      'notSet': 'Not Set',
+      'selectName': 'Select Name',
+      'selectVerse': 'Select Verse',
+      'everyXMins': 'Every %s mins',
+      'quietNotSet': 'Quiet hours not set',
+      'quietFormat': '%s:00 - %s:00',
     },
     'ur': {
       // Navigation
@@ -106,6 +134,34 @@ class S {
       // Share/Copy
       'audioNotAvailable': 'آڈیو فائلز دستیاب نہیں، صرف متن شیئر کیا گیا',
       'ayah': 'آیت',
+
+      // Tasbeeh
+      'tasbeeh': 'تسبیح',
+      'tasbeehCounter': 'ذکر کاؤنٹر',
+      'tap': 'ٹیپ کریں',
+      'reset': 'ری سیٹ',
+      'resetConfirm': 'کاؤنٹر ری سیٹ کریں؟',
+      'yes': 'ہاں',
+      'no': 'نہیں',
+
+      // Reminder Screen
+      'currentStatus': 'موجودہ ترتیبات',
+      'intervalLabel': 'یاد دہانی کا وقفہ',
+      'quietHours': 'خاموش اوقات',
+      'quietStart': 'شروع',
+      'quietEnd': 'اختتام',
+      'reminderContent': 'یاد دہانی کا مواد',
+      'allNames': 'تمام 99 نام (ترتیب وار)',
+      'specificName': 'مخصوص نام',
+      'randomVerses': 'قرآنی آیات بے ترتیب',
+      'specificVerse': 'مخصوص آیت',
+      'testReminder': 'یاد دہانی آزمائیں',
+      'notSet': 'مقرر نہیں',
+      'selectName': 'نام منتخب کریں',
+      'selectVerse': 'آیت منتخب کریں',
+      'everyXMins': 'ہر %s منٹ',
+      'quietNotSet': 'خاموش اوقات مقرر نہیں',
+      'quietFormat': '%s:00 - %s:00',
     },
   };
 }

@@ -3,7 +3,8 @@ import '../theme/app_theme.dart';
 import '../localization/app_strings.dart';
 
 class ReminderPopup {
-  static void show(
+  /// Shows the popup and returns a function to close it programmatically.
+  static VoidCallback show(
     BuildContext context, {
     required String arabicText,
     String? englishText,
@@ -11,6 +12,16 @@ class ReminderPopup {
     required VoidCallback onDismiss,
     String lang = 'ur',
   }) {
+    bool isOpen = true;
+
+    void closePopup() {
+      if (isOpen && Navigator.of(context, rootNavigator: true).canPop()) {
+        isOpen = false;
+        onDismiss();
+        Navigator.of(context, rootNavigator: true).pop();
+      }
+    }
+
     showDialog(
       context: context,
       barrierDismissible: true,
@@ -32,6 +43,7 @@ class ReminderPopup {
         actions: [
           ElevatedButton(
             onPressed: () {
+              isOpen = false;
               onDismiss();
               Navigator.pop(ctx);
             },
@@ -39,6 +51,8 @@ class ReminderPopup {
           ),
         ],
       ),
-    );
+    ).then((_) => isOpen = false);
+
+    return closePopup;
   }
 }

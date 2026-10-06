@@ -10,11 +10,16 @@ class AudioService {
   StreamSubscription? _verseCompleteSubscription;
   StreamSubscription? _nameCompleteSubscription;
 
+  /// Completes when ALL audio (Arabic + Urdu) finishes playing.
+  Completer<void>? _allDoneCompleter;
+  Future<void> get onAllComplete => _allDoneCompleter?.future ?? Future.value();
+
   Future<void> playVerseWithTranslation({
     required String? arabicAudioPath,
     required String? urduAudioPath,
   }) async {
     await stopAll();
+    _allDoneCompleter = Completer<void>();
 
     if (arabicAudioPath != null) {
       await versePlayer.play(DeviceFileSource(arabicAudioPath));
@@ -23,20 +28,48 @@ class AudioService {
         _verseCompleteSubscription = versePlayer.onPlayerComplete.listen((event) async {
           _verseCompleteSubscription?.cancel();
           await namePlayer.play(DeviceFileSource(urduAudioPath));
+          _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) {
+            _nameCompleteSubscription?.cancel();
+            _completeAll();
+          });
+        });
+      } else {
+        _verseCompleteSubscription = versePlayer.onPlayerComplete.listen((event) {
+          _verseCompleteSubscription?.cancel();
+          _completeAll();
         });
       }
     } else if (urduAudioPath != null) {
       await namePlayer.play(DeviceFileSource(urduAudioPath));
+      _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) {
+        _nameCompleteSubscription?.cancel();
+        _completeAll();
+      });
+    } else {
+      _completeAll();
     }
   }
 
   Future<void> playNameAudio({required int nameIndex}) async {
     await stopAll();
+    _allDoneCompleter = Completer<void>();
+
     await namePlayer.play(AssetSource('audio/names/name_${nameIndex}_ar.mp3'));
     _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) async {
       _nameCompleteSubscription?.cancel();
+      // Now play Urdu
       await namePlayer.play(AssetSource('audio/names/name_${nameIndex}_ur.mp3'));
+      _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) {
+        _nameCompleteSubscription?.cancel();
+        _completeAll();
+      });
     });
+  }
+
+  void _completeAll() {
+    if (_allDoneCompleter != null && !_allDoneCompleter!.isCompleted) {
+      _allDoneCompleter!.complete();
+    }
   }
 
   Future<void> speakText(String text, {String language = "ur-PK", double rate = 0.45}) async {

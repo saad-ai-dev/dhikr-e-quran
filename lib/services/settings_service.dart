@@ -18,18 +18,34 @@ class SettingsService {
 
   ReminderType get selectedType {
     int idx = _prefs.getInt(ReminderService.keyType) ?? 0;
+    if (idx >= ReminderType.values.length) idx = 0;
     return ReminderType.values[idx];
   }
   set selectedType(ReminderType value) => _prefs.setInt(ReminderService.keyType, value.index);
 
-  bool get repeatSingleVerse => _prefs.getBool(ReminderService.keyRepeatSingleVerse) ?? false;
-  set repeatSingleVerse(bool value) => _prefs.setBool(ReminderService.keyRepeatSingleVerse, value);
+  int? get quietStartHour => _prefs.getInt(ReminderService.keyQuietStartHour);
+  set quietStartHour(int? value) {
+    if (value == null) { _prefs.remove(ReminderService.keyQuietStartHour); }
+    else { _prefs.setInt(ReminderService.keyQuietStartHour, value); }
+  }
 
-  bool get repeatSingleName => _prefs.getBool(ReminderService.keyRepeatSingleName) ?? false;
-  set repeatSingleName(bool value) => _prefs.setBool(ReminderService.keyRepeatSingleName, value);
+  int? get quietEndHour => _prefs.getInt(ReminderService.keyQuietEndHour);
+  set quietEndHour(int? value) {
+    if (value == null) { _prefs.remove(ReminderService.keyQuietEndHour); }
+    else { _prefs.setInt(ReminderService.keyQuietEndHour, value); }
+  }
+
+  int get specificNameIndex => _prefs.getInt(ReminderService.keySpecificNameIndex) ?? 1;
+  set specificNameIndex(int value) => _prefs.setInt(ReminderService.keySpecificNameIndex, value);
+
+  int get specificVerseIndex => _prefs.getInt(ReminderService.keySpecificVerseIndex) ?? 1;
+  set specificVerseIndex(int value) => _prefs.setInt(ReminderService.keySpecificVerseIndex, value);
 
   String get language => _prefs.getString('app_language') ?? 'en';
   set language(String value) => _prefs.setString('app_language', value);
+
+  int get tasbeehCount => _prefs.getInt('tasbeeh_count') ?? 0;
+  set tasbeehCount(int value) => _prefs.setInt('tasbeeh_count', value);
 
   static Future<void> requestAppPermissions() async {
     if (!Platform.isAndroid) return;

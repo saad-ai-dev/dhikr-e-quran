@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -7,9 +6,7 @@ import '../models/ayah.dart';
 import '../services/asset_manager.dart';
 import '../services/audio_service.dart';
 import '../services/settings_service.dart';
-import '../services/reminder_service.dart';
 import '../widgets/ayah_card.dart';
-import '../widgets/reminder_popup.dart';
 import '../widgets/settings_bottom_sheet.dart';
 import '../theme/app_theme.dart';
 import '../localization/app_strings.dart';
@@ -36,7 +33,6 @@ class _QuranScreenState extends State<QuranScreen> {
 
   String get _lang => widget.settingsService.language;
   String _s(String key) => S.get(key, _lang);
-  Timer? _reminderTimer;
 
   AssetManager get assets => widget.assetManager;
   AudioService get audio => widget.audioService;
@@ -47,12 +43,10 @@ class _QuranScreenState extends State<QuranScreen> {
     super.initState();
     _statusMessage = S.get('initializing', widget.settingsService.language);
     _loadData();
-    _startReminderTimer();
   }
 
   @override
   void dispose() {
-    _reminderTimer?.cancel();
     audio.stopAll();
     super.dispose();
   }
@@ -66,44 +60,6 @@ class _QuranScreenState extends State<QuranScreen> {
       if (mounted) setState(() => _statusMessage = msg);
     });
     if (mounted) setState(() => _isLoading = false);
-  }
-
-  void _startReminderTimer() {
-    _reminderTimer?.cancel();
-    _reminderTimer = Timer.periodic(
-      Duration(minutes: settings.reminderInterval),
-      (_) => _triggerReminder(),
-    );
-  }
-
-  Future<void> _triggerReminder() async {
-    if (await ReminderService.isQuietHoursActive()) return;
-
-    if (settings.selectedType == ReminderType.allahNames) {
-      int idx = await ReminderService.getNextNameIndex();
-      var name = assets.allahNames[(idx - 1) % assets.allahNames.length];
-
-      ReminderPopup.show(context,
-        arabicText: name.arabic,
-        englishText: name.transliteration,
-        urduTranslation: name.urduMeaning,
-        onDismiss: () => audio.stopAll(),
-        lang: _lang,
-      );
-      await audio.playNameAudio(nameIndex: idx);
-    } else {
-      int globalIdx = await ReminderService.getNextVerseIndex(6236);
-      int localIdx = (globalIdx - 1) % assets.surahData!.ayahs.length;
-      Ayah ayah = assets.surahData!.ayahs[localIdx];
-
-      ReminderPopup.show(context,
-        arabicText: ayah.arabicText,
-        urduTranslation: ayah.urduText,
-        onDismiss: () => audio.stopAll(),
-        lang: _lang,
-      );
-      _playAyah(ayah);
-    }
   }
 
   void _playAyah(Ayah ayah) {
@@ -159,7 +115,7 @@ class _QuranScreenState extends State<QuranScreen> {
             icon: const Icon(Icons.settings),
             onPressed: () => SettingsBottomSheet.show(context,
               settings: settings,
-              onChanged: _startReminderTimer,
+              onChanged: () {},
             ),
           ),
         ],
@@ -175,41 +131,19 @@ class _QuranScreenState extends State<QuranScreen> {
                 ],
               ),
             )
-          : Column(
-              children: [
-                Container(
-                  color: AppTheme.primaryColor.withOpacity(0.1),
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("${_s('reminderLabel')} ${settings.reminderInterval} ${_s('minutes')}",
-                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
-                      ElevatedButton.icon(
-                        icon: const Icon(Icons.notifications_active, size: 18),
-                        label: Text(_s('test')),
-                        onPressed: _triggerReminder,
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: ListView.builder(
-                    padding: const EdgeInsets.only(top: 8, bottom: 16),
-                    itemCount: assets.surahData!.ayahs.length,
-                    itemBuilder: (_, i) {
-                      final ayah = assets.surahData!.ayahs[i];
-                      return AyahCard(
-                        ayah: ayah,
-                        lang: _lang,
-                        onTap: () => _playAyah(ayah),
-                        onCopy: () => _copyAyah(ayah),
-                        onShare: () => _shareAyah(ayah),
-                      );
-                    },
-                  ),
-                ),
-              ],
+          : ListView.builder(
+              padding: const EdgeInsets.only(top: 8, bottom: 16),
+              itemCount: assets.surahData!.ayahs.length,
+              itemBuilder: (_, i) {
+                final ayah = assets.surahData!.ayahs[i];
+                return AyahCard(
+                  ayah: ayah,
+                  lang: _lang,
+                  onTap: () => _playAyah(ayah),
+                  onCopy: () => _copyAyah(ayah),
+                  onShare: () => _shareAyah(ayah),
+                );
+              },
             ),
     );
   }
