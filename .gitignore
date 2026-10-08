@@ -41,3 +41,15 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local config
+android/local.properties
+.env
+*.env
+
+# Generated files
+generate_audio.py
+generate_fatiha_audio.py
+
+# Claude plans
+.claude/plans/
