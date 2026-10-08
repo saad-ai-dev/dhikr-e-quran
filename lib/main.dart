@@ -97,14 +97,16 @@ class _QuranAppState extends State<QuranApp> {
       final ayahs = assets.surahData!.ayahs;
       _showVerseReminder(ctx, ayahs[Random().nextInt(ayahs.length)], lang);
     } else if (type == ReminderType.quranSingleVerse) {
-      final idx = (settings.specificVerseIndex - 1) % assets.surahData!.ayahs.length;
+      final idx =
+          (settings.specificVerseIndex - 1) % assets.surahData!.ayahs.length;
       _showVerseReminder(ctx, assets.surahData!.ayahs[idx], lang);
     }
   }
 
   void _showNameReminder(BuildContext ctx, int idx, String lang) {
     var name = assets.allahNames[(idx - 1) % assets.allahNames.length];
-    final closePopup = ReminderPopup.show(ctx,
+    final closePopup = ReminderPopup.show(
+      ctx,
       arabicText: name.arabic,
       englishText: name.transliteration,
       urduTranslation: name.urduMeaning,
@@ -116,7 +118,8 @@ class _QuranAppState extends State<QuranApp> {
   }
 
   void _showVerseReminder(BuildContext ctx, ayah, String lang) {
-    final closePopup = ReminderPopup.show(ctx,
+    final closePopup = ReminderPopup.show(
+      ctx,
       arabicText: ayah.arabicText,
       urduTranslation: ayah.urduText,
       onDismiss: () => audio.stopAll(),
@@ -142,32 +145,37 @@ class _QuranAppState extends State<QuranApp> {
           case '/':
             return MaterialPageRoute(builder: (_) => const SplashScreen());
           case '/home':
-            return MaterialPageRoute(builder: (_) => HomeScreen(
-              assetManager: assets,
-              audioService: audio,
-              settingsService: settings,
-            ));
+            return MaterialPageRoute(
+                builder: (_) => HomeScreen(
+                      assetManager: assets,
+                      audioService: audio,
+                      settingsService: settings,
+                    ));
           case '/quran':
-            return MaterialPageRoute(builder: (_) => QuranScreen(
-              assetManager: assets,
-              audioService: audio,
-              settingsService: settings,
-            ));
+            return MaterialPageRoute(
+                builder: (_) => QuranScreen(
+                      assetManager: assets,
+                      audioService: audio,
+                      settingsService: settings,
+                    ));
           case '/names':
-            return MaterialPageRoute(builder: (_) => NamesScreen(
-              assetManager: assets,
-              audioService: audio,
-            ));
+            return MaterialPageRoute(
+                builder: (_) => NamesScreen(
+                      assetManager: assets,
+                      audioService: audio,
+                    ));
           case '/tasbeeh':
-            return MaterialPageRoute(builder: (_) => TasbeehScreen(
-              settingsService: settings,
-            ));
+            return MaterialPageRoute(
+                builder: (_) => TasbeehScreen(
+                      settingsService: settings,
+                    ));
           case '/reminder':
-            return MaterialPageRoute(builder: (_) => ReminderScreen(
-              settingsService: settings,
-              assetManager: assets,
-              audioService: audio,
-            ));
+            return MaterialPageRoute(
+                builder: (_) => ReminderScreen(
+                      settingsService: settings,
+                      assetManager: assets,
+                      audioService: audio,
+                    ));
           default:
             return MaterialPageRoute(builder: (_) => const SplashScreen());
         }

@@ -15,7 +15,8 @@ class SettingsBottomSheet {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (ctx) => _SettingsContent(settings: settings, onChanged: onChanged),
+      builder: (ctx) =>
+          _SettingsContent(settings: settings, onChanged: onChanged),
     );
   }
 }
@@ -49,16 +50,24 @@ class _SettingsContentState extends State<_SettingsContent> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(_s('settingsTitle'), style: AppTheme.urduTitle.copyWith(fontSize: 18)),
+          Text(_s('settingsTitle'),
+              style: AppTheme.urduTitle.copyWith(fontSize: 18)),
           const Divider(),
           // Language toggle
           ListTile(
-            leading: const Icon(Icons.language, color: AppTheme.secondaryColor, size: 20),
+            leading: const Icon(Icons.language,
+                color: AppTheme.secondaryColor, size: 20),
             title: Text(_s('language'), style: const TextStyle(fontSize: 14)),
             trailing: SegmentedButton<String>(
               segments: [
-                ButtonSegment(value: 'en', label: Text(_s('english'), style: const TextStyle(fontSize: 12))),
-                ButtonSegment(value: 'ur', label: Text(_s('urdu'), style: const TextStyle(fontSize: 12))),
+                ButtonSegment(
+                    value: 'en',
+                    label: Text(_s('english'),
+                        style: const TextStyle(fontSize: 12))),
+                ButtonSegment(
+                    value: 'ur',
+                    label:
+                        Text(_s('urdu'), style: const TextStyle(fontSize: 12))),
               ],
               selected: {_lang},
               onSelectionChanged: (val) {
@@ -75,7 +84,8 @@ class _SettingsContentState extends State<_SettingsContent> {
           const SizedBox(height: 16),
           // Reminder settings link
           ListTile(
-            leading: const Icon(Icons.notifications_active_rounded, color: AppTheme.secondaryColor, size: 20),
+            leading: const Icon(Icons.notifications_active_rounded,
+                color: AppTheme.secondaryColor, size: 20),
             title: Text(_s('reminders'), style: const TextStyle(fontSize: 14)),
             subtitle: Text(
               '${_s('reminderEvery')} ${widget.settings.reminderInterval} ${_s('minutes')}',
@@ -89,7 +99,8 @@ class _SettingsContentState extends State<_SettingsContent> {
           ),
           const SizedBox(height: 16),
           ElevatedButton(
-            style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(44)),
+            style: ElevatedButton.styleFrom(
+                minimumSize: const Size.fromHeight(44)),
             onPressed: () => Navigator.pop(context),
             child: Text(_s('savePreferences')),
           ),

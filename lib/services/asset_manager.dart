@@ -16,11 +16,15 @@ class AssetManager {
   bool get isReady => surahData != null;
 
   Future<void> loadAllData({required void Function(String) onProgress}) async {
-    String fatihaJson = await rootBundle.loadString('assets/json/surah_fatiha.json');
+    String fatihaJson =
+        await rootBundle.loadString('assets/json/surah_fatiha.json');
     surahData = Surah.fromJson(jsonDecode(fatihaJson));
 
-    String namesJson = await rootBundle.loadString('assets/json/allah_names.json');
-    allahNames = (jsonDecode(namesJson) as List).map((n) => AllahName.fromJson(n)).toList();
+    String namesJson =
+        await rootBundle.loadString('assets/json/allah_names.json');
+    allahNames = (jsonDecode(namesJson) as List)
+        .map((n) => AllahName.fromJson(n))
+        .toList();
 
     Directory appDocDir = await getApplicationDocumentsDirectory();
 
@@ -48,7 +52,8 @@ class AssetManager {
 
   Future<bool> _downloadFile(String url, File target) async {
     try {
-      final response = await http.get(Uri.parse(url)).timeout(const Duration(seconds: 10));
+      final response =
+          await http.get(Uri.parse(url)).timeout(const Duration(seconds: 10));
       if (response.statusCode == 200) {
         await target.writeAsBytes(response.bodyBytes);
         return true;

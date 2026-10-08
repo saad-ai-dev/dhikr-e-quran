@@ -82,69 +82,71 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
               Container(
                 width: 140,
                 height: 140,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: AppTheme.cardGradient,
-                boxShadow: [
-                  BoxShadow(
-                    color: AppTheme.primaryColor.withOpacity(0.3),
-                    blurRadius: 20,
-                    offset: const Offset(0, 8),
-                  ),
-                ],
-              ),
-              child: Center(
-                child: Text(
-                  '$_count',
-                  style: const TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                    color: AppTheme.accentGold,
-                  ),
-                ),
-              ),
-            ),
-            const Spacer(flex: 1),
-            // Tap button
-            GestureDetector(
-              onTap: _increment,
-              child: Container(
-                width: 100,
-                height: 100,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppTheme.secondaryColor,
+                  gradient: AppTheme.cardGradient,
                   boxShadow: [
                     BoxShadow(
-                      color: AppTheme.secondaryColor.withOpacity(0.4),
-                      blurRadius: 16,
-                      offset: const Offset(0, 6),
+                      color: AppTheme.primaryColor.withOpacity(0.3),
+                      blurRadius: 20,
+                      offset: const Offset(0, 8),
                     ),
                   ],
                 ),
                 child: Center(
                   child: Text(
-                    _s('tap'),
+                    '$_count',
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: AppTheme.accentGold,
                     ),
                   ),
                 ),
               ),
-            ),
-            const Spacer(flex: 2),
-            // Reset button
-            Padding(
-              padding: const EdgeInsets.only(bottom: 24),
-              child: TextButton.icon(
-                onPressed: _confirmReset,
-                icon: const Icon(Icons.refresh_rounded, size: 18),
-                label: Text(_s('reset'), style: const TextStyle(fontSize: 13)),
-                style: TextButton.styleFrom(foregroundColor: AppTheme.textMuted),
+              const Spacer(flex: 1),
+              // Tap button
+              GestureDetector(
+                onTap: _increment,
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppTheme.secondaryColor,
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppTheme.secondaryColor.withOpacity(0.4),
+                        blurRadius: 16,
+                        offset: const Offset(0, 6),
+                      ),
+                    ],
+                  ),
+                  child: Center(
+                    child: Text(
+                      _s('tap'),
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
               ),
-            ),
+              const Spacer(flex: 2),
+              // Reset button
+              Padding(
+                padding: const EdgeInsets.only(bottom: 24),
+                child: TextButton.icon(
+                  onPressed: _confirmReset,
+                  icon: const Icon(Icons.refresh_rounded, size: 18),
+                  label:
+                      Text(_s('reset'), style: const TextStyle(fontSize: 13)),
+                  style:
+                      TextButton.styleFrom(foregroundColor: AppTheme.textMuted),
+                ),
+              ),
             ],
           ),
         ),

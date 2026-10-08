@@ -20,13 +20,17 @@ class AppTheme {
           centerTitle: true,
           elevation: 0,
           toolbarHeight: 48,
-          titleTextStyle: TextStyle(fontSize: 16, fontFamily: 'NotoNastaliqUrdu', color: Colors.white),
+          titleTextStyle: TextStyle(
+              fontSize: 16,
+              fontFamily: 'NotoNastaliqUrdu',
+              color: Colors.white),
         ),
         cardTheme: CardTheme(
           color: cardColor,
           elevation: 1,
           shadowColor: Colors.black12,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
@@ -34,7 +38,8 @@ class AppTheme {
             foregroundColor: Colors.white,
             elevation: 0,
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             textStyle: const TextStyle(fontSize: 13),
           ),
         ),
