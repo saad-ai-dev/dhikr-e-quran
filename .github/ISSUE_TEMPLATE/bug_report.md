@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report a bug in Dhikr-e-Quran
+about: Report a bug or unexpected behavior
 title: ''
 labels: 'bug'
 assignees: 'saad-ai-dev'
@@ -11,7 +11,7 @@ A clear description of the bug.
 
 ## Steps to Reproduce
 1. Go to '...'
-2. Click on '...'
+2. Tap on '...'
 3. See error
 
 ## Expected Behavior
@@ -24,6 +24,10 @@ What actually happened.
 If applicable, add screenshots.
 
 ## Device Info
-- Device: [e.g., Samsung Galaxy S24]
-- OS: [e.g., Android 14]
-- App Version: [e.g., 1.0.0]
+- **Device:** [e.g., Samsung Galaxy S24]
+- **OS:** [e.g., Android 14]
+- **App Version:** [e.g., 1.0.0]
+- **Language:** [English / Urdu]
+
+## Additional Context
+Any other information that might help.

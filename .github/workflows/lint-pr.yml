@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [opened, edited, synchronize]
 
+permissions:
+  pull-requests: read
+
 jobs:
   pr-title:
     name: Validate PR Title
@@ -26,3 +29,5 @@ jobs:
             ci
             chore
           requireScope: false
+          subjectPattern: ^.+$
+          subjectPatternError: 'PR title must not be empty after the type prefix'
