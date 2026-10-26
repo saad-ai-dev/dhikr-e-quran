@@ -25,16 +25,19 @@ class AudioService {
       await versePlayer.play(DeviceFileSource(arabicAudioPath));
 
       if (urduAudioPath != null) {
-        _verseCompleteSubscription = versePlayer.onPlayerComplete.listen((event) async {
+        _verseCompleteSubscription =
+            versePlayer.onPlayerComplete.listen((event) async {
           _verseCompleteSubscription?.cancel();
           await namePlayer.play(DeviceFileSource(urduAudioPath));
-          _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) {
+          _nameCompleteSubscription =
+              namePlayer.onPlayerComplete.listen((event) {
             _nameCompleteSubscription?.cancel();
             _completeAll();
           });
         });
       } else {
-        _verseCompleteSubscription = versePlayer.onPlayerComplete.listen((event) {
+        _verseCompleteSubscription =
+            versePlayer.onPlayerComplete.listen((event) {
           _verseCompleteSubscription?.cancel();
           _completeAll();
         });
@@ -55,10 +58,12 @@ class AudioService {
     _allDoneCompleter = Completer<void>();
 
     await namePlayer.play(AssetSource('audio/names/name_${nameIndex}_ar.mp3'));
-    _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) async {
+    _nameCompleteSubscription =
+        namePlayer.onPlayerComplete.listen((event) async {
       _nameCompleteSubscription?.cancel();
       // Now play Urdu
-      await namePlayer.play(AssetSource('audio/names/name_${nameIndex}_ur.mp3'));
+      await namePlayer
+          .play(AssetSource('audio/names/name_${nameIndex}_ur.mp3'));
       _nameCompleteSubscription = namePlayer.onPlayerComplete.listen((event) {
         _nameCompleteSubscription?.cancel();
         _completeAll();
@@ -72,9 +77,10 @@ class AudioService {
     }
   }
 
-  Future<void> speakText(String text, {String language = "ur-PK", double rate = 0.45}) async {
+  Future<void> speakText(String text,
+      {String language = 'ur-PK', double rate = 0.45}) async {
     if (Platform.isLinux) {
-      String espeakLang = language.startsWith("ar") ? "ar" : "ur";
+      String espeakLang = language.startsWith('ar') ? 'ar' : 'ur';
       int speed = (150 * rate).round();
       await Process.run('espeak-ng', ['-v', espeakLang, '-s', '$speed', text]);
     } else {
@@ -83,7 +89,7 @@ class AudioService {
         await _flutterTts.setSpeechRate(rate);
         await _flutterTts.speak(text);
       } catch (e) {
-        print("TTS not available: $e");
+        print('TTS not available: $e');
       }
     }
   }
@@ -96,7 +102,9 @@ class AudioService {
     if (Platform.isLinux) {
       await Process.run('pkill', ['-f', 'espeak-ng']);
     } else {
-      try { await _flutterTts.stop(); } catch (_) {}
+      try {
+        await _flutterTts.stop();
+      } catch (_) {}
     }
   }
 

@@ -70,11 +70,14 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   void _copyAyah(Ayah ayah) {
-    final ref = '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
-    Clipboard.setData(ClipboardData(text: '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref'));
+    final ref =
+        '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
+    Clipboard.setData(
+        ClipboardData(text: '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref'));
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('${_s('ayah')} ${ayah.ayahNumber} ${_s('ayahCopied')}', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+        content: Text('${_s('ayah')} ${ayah.ayahNumber} ${_s('ayahCopied')}',
+            style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 2),
       ),
@@ -82,7 +85,8 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   Future<void> _shareAyah(Ayah ayah) async {
-    final ref = '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
+    final ref =
+        '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
     final text = '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref';
     final List<XFile> files = [];
 
@@ -113,7 +117,8 @@ class _QuranScreenState extends State<QuranScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () => SettingsBottomSheet.show(context,
+            onPressed: () => SettingsBottomSheet.show(
+              context,
               settings: settings,
               onChanged: () {},
             ),

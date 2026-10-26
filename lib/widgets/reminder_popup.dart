@@ -31,13 +31,17 @@ class ReminderPopup {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(arabicText, textAlign: TextAlign.center, style: AppTheme.arabicHeading),
+            Text(arabicText,
+                textAlign: TextAlign.center, style: AppTheme.arabicHeading),
             const SizedBox(height: 15),
             if (englishText != null)
-              Text(englishText, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16, color: AppTheme.secondaryColor)),
-            if (englishText != null)
-              const SizedBox(height: 10),
-            Text(urduTranslation, textAlign: TextAlign.center, style: AppTheme.urduBody),
+              Text(englishText,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                      fontSize: 16, color: AppTheme.secondaryColor)),
+            if (englishText != null) const SizedBox(height: 10),
+            Text(urduTranslation,
+                textAlign: TextAlign.center, style: AppTheme.urduBody),
           ],
         ),
         actions: [

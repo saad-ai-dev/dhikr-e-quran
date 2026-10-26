@@ -38,10 +38,15 @@ class FeatureCard extends StatelessWidget {
                 child: Icon(icon, size: 22, color: color),
               ),
               const SizedBox(height: 10),
-              Text(titleUrdu, style: AppTheme.urduBody.copyWith(color: AppTheme.textDark, fontSize: 14), textAlign: TextAlign.center),
+              Text(titleUrdu,
+                  style: AppTheme.urduBody
+                      .copyWith(color: AppTheme.textDark, fontSize: 14),
+                  textAlign: TextAlign.center),
               if (subtitleUrdu != null) ...[
                 const SizedBox(height: 2),
-                Text(subtitleUrdu!, style: AppTheme.urduSubtitle.copyWith(fontSize: 11), textAlign: TextAlign.center),
+                Text(subtitleUrdu!,
+                    style: AppTheme.urduSubtitle.copyWith(fontSize: 11),
+                    textAlign: TextAlign.center),
               ],
             ],
           ),

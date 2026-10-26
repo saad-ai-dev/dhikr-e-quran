@@ -34,9 +34,15 @@ class AyahCard extends StatelessWidget {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _ActionIcon(icon: Icons.copy_rounded, tooltip: S.get('copy', lang), onPressed: onCopy),
+                  _ActionIcon(
+                      icon: Icons.copy_rounded,
+                      tooltip: S.get('copy', lang),
+                      onPressed: onCopy),
                   const SizedBox(height: 4),
-                  _ActionIcon(icon: Icons.share_rounded, tooltip: S.get('share', lang), onPressed: onShare),
+                  _ActionIcon(
+                      icon: Icons.share_rounded,
+                      tooltip: S.get('share', lang),
+                      onPressed: onShare),
                 ],
               ),
               const SizedBox(width: 10),
@@ -44,9 +50,11 @@ class AyahCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text(ayah.arabicText, textAlign: TextAlign.right, style: AppTheme.arabicBody),
+                    Text(ayah.arabicText,
+                        textAlign: TextAlign.right, style: AppTheme.arabicBody),
                     const SizedBox(height: 10),
-                    Text(ayah.urduText, textAlign: TextAlign.right, style: AppTheme.urduBody),
+                    Text(ayah.urduText,
+                        textAlign: TextAlign.right, style: AppTheme.urduBody),
                   ],
                 ),
               ),
@@ -63,7 +71,8 @@ class _ActionIcon extends StatelessWidget {
   final String tooltip;
   final VoidCallback onPressed;
 
-  const _ActionIcon({required this.icon, required this.tooltip, required this.onPressed});
+  const _ActionIcon(
+      {required this.icon, required this.tooltip, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

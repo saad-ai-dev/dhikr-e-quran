@@ -27,7 +27,8 @@ class _NamesScreenState extends State<NamesScreen> {
   int? _playingId;
   bool _isLoading = true;
 
-  String _s(String key) => S.get(key, 'ur'); // Names screen always uses Urdu for Islamic terms
+  String _s(String key) =>
+      S.get(key, 'ur'); // Names screen always uses Urdu for Islamic terms
 
   @override
   void initState() {
@@ -56,11 +57,13 @@ class _NamesScreenState extends State<NamesScreen> {
   }
 
   void _copyName(AllahName name) {
-    final text = '${name.arabic}\n${name.transliteration}\n${name.urduMeaning}\n\nاسماء الحسنیٰ - ${name.id}/99';
+    final text =
+        '${name.arabic}\n${name.transliteration}\n${name.urduMeaning}\n\nاسماء الحسنیٰ - ${name.id}/99';
     Clipboard.setData(ClipboardData(text: text));
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('${name.transliteration} ${_s('nameCopied')}', style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
+        content: Text('${name.transliteration} ${_s('nameCopied')}',
+            style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 2),
       ),
@@ -68,14 +71,16 @@ class _NamesScreenState extends State<NamesScreen> {
   }
 
   Future<void> _shareName(AllahName name) async {
-    final text = '${name.arabic}\n${name.transliteration}\n${name.urduMeaning}\n\nاسماء الحسنیٰ - ${name.id}/99';
+    final text =
+        '${name.arabic}\n${name.transliteration}\n${name.urduMeaning}\n\nاسماء الحسنیٰ - ${name.id}/99';
     final List<XFile> files = [];
 
     // Copy bundled asset audio to temp for sharing
     final tempDir = await getTemporaryDirectory();
     for (final suffix in ['ar', 'ur']) {
       try {
-        final assetData = await rootBundle.load('assets/audio/names/name_${name.id}_$suffix.mp3');
+        final assetData = await rootBundle
+            .load('assets/audio/names/name_${name.id}_$suffix.mp3');
         final tempFile = File('${tempDir.path}/name_${name.id}_$suffix.mp3');
         await tempFile.writeAsBytes(assetData.buffer.asUint8List());
         files.add(XFile(tempFile.path, mimeType: 'audio/mpeg'));
@@ -83,9 +88,11 @@ class _NamesScreenState extends State<NamesScreen> {
     }
 
     if (files.isNotEmpty) {
-      await Share.shareXFiles(files, text: text, subject: '${name.transliteration} - اسماء الحسنیٰ');
+      await Share.shareXFiles(files,
+          text: text, subject: '${name.transliteration} - اسماء الحسنیٰ');
     } else {
-      await Share.share(text, subject: '${name.transliteration} - اسماء الحسنیٰ');
+      await Share.share(text,
+          subject: '${name.transliteration} - اسماء الحسنیٰ');
     }
   }
 
@@ -93,7 +100,8 @@ class _NamesScreenState extends State<NamesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('اسماء الحسنیٰ', style: TextStyle(fontFamily: 'NotoNastaliqUrdu', fontSize: 22)),
+        title: const Text('اسماء الحسنیٰ',
+            style: TextStyle(fontFamily: 'NotoNastaliqUrdu', fontSize: 22)),
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -104,10 +112,14 @@ class _NamesScreenState extends State<NamesScreen> {
                 final name = widget.assetManager.allahNames[i];
                 final isPlaying = _playingId == name.id;
                 return Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-                  color: isPlaying ? AppTheme.primaryColor.withOpacity(0.08) : null,
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+                  color: isPlaying
+                      ? AppTheme.primaryColor.withOpacity(0.08)
+                      : null,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 12, vertical: 10),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -119,21 +131,28 @@ class _NamesScreenState extends State<NamesScreen> {
                               radius: 16,
                               backgroundColor: AppTheme.primaryColor,
                               foregroundColor: Colors.white,
-                              child: Text('${name.id}', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+                              child: Text('${name.id}',
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12)),
                             ),
                             const SizedBox(height: 6),
                             IconButton(
-                              icon: const Icon(Icons.copy_rounded, size: 16, color: AppTheme.secondaryColor),
+                              icon: const Icon(Icons.copy_rounded,
+                                  size: 16, color: AppTheme.secondaryColor),
                               tooltip: _s('copy'),
                               onPressed: () => _copyName(name),
-                              constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+                              constraints: const BoxConstraints(
+                                  minWidth: 30, minHeight: 30),
                               padding: EdgeInsets.zero,
                             ),
                             IconButton(
-                              icon: const Icon(Icons.share_rounded, size: 16, color: AppTheme.secondaryColor),
+                              icon: const Icon(Icons.share_rounded,
+                                  size: 16, color: AppTheme.secondaryColor),
                               tooltip: _s('share'),
                               onPressed: () => _shareName(name),
-                              constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+                              constraints: const BoxConstraints(
+                                  minWidth: 30, minHeight: 30),
                               padding: EdgeInsets.zero,
                             ),
                           ],
@@ -146,12 +165,19 @@ class _NamesScreenState extends State<NamesScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text(name.arabic, textAlign: TextAlign.right, style: AppTheme.arabicBody),
+                                Text(name.arabic,
+                                    textAlign: TextAlign.right,
+                                    style: AppTheme.arabicBody),
                                 const SizedBox(height: 6),
-                                Text(name.transliteration, textAlign: TextAlign.right,
-                                    style: const TextStyle(fontSize: 16, color: AppTheme.secondaryColor)),
+                                Text(name.transliteration,
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                        fontSize: 16,
+                                        color: AppTheme.secondaryColor)),
                                 const SizedBox(height: 4),
-                                Text(name.urduMeaning, textAlign: TextAlign.right, style: AppTheme.urduSubtitle),
+                                Text(name.urduMeaning,
+                                    textAlign: TextAlign.right,
+                                    style: AppTheme.urduSubtitle),
                               ],
                             ),
                           ),
@@ -160,7 +186,9 @@ class _NamesScreenState extends State<NamesScreen> {
                         // Right: play button
                         IconButton(
                           icon: Icon(
-                            isPlaying ? Icons.pause_circle_filled : Icons.play_circle_fill,
+                            isPlaying
+                                ? Icons.pause_circle_filled
+                                : Icons.play_circle_fill,
                             color: AppTheme.primaryColor,
                             size: 22,
                           ),

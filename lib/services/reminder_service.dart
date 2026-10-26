@@ -1,6 +1,11 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-enum ReminderType { allahNamesAll, allahNameSingle, quranRandom, quranSingleVerse }
+enum ReminderType {
+  allahNamesAll,
+  allahNameSingle,
+  quranRandom,
+  quranSingleVerse
+}
 
 class ReminderService {
   static const String keyIntervalMinutes = 'reminder_interval';

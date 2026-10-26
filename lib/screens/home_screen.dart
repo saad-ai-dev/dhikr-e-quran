@@ -42,12 +42,27 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _NavItem(icon: Icons.home_rounded, label: _s('home'), isActive: true, onTap: () {}),
-            _NavItem(icon: Icons.menu_book_rounded, label: _s('quran'), onTap: () => Navigator.pushNamed(context, '/quran')),
-            _NavItem(icon: Icons.star_rounded, label: _s('names'), onTap: () => Navigator.pushNamed(context, '/names')),
-            _NavItem(icon: Icons.tune_rounded, label: _s('settings'), onTap: () {
-              SettingsBottomSheet.show(context, settings: widget.settingsService, onChanged: () => setState(() {}));
-            }),
+            _NavItem(
+                icon: Icons.home_rounded,
+                label: _s('home'),
+                isActive: true,
+                onTap: () {}),
+            _NavItem(
+                icon: Icons.menu_book_rounded,
+                label: _s('quran'),
+                onTap: () => Navigator.pushNamed(context, '/quran')),
+            _NavItem(
+                icon: Icons.star_rounded,
+                label: _s('names'),
+                onTap: () => Navigator.pushNamed(context, '/names')),
+            _NavItem(
+                icon: Icons.tune_rounded,
+                label: _s('settings'),
+                onTap: () {
+                  SettingsBottomSheet.show(context,
+                      settings: widget.settingsService,
+                      onChanged: () => setState(() {}));
+                }),
           ],
         ),
       ),
@@ -58,7 +73,8 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Container(
                 width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
                 decoration: BoxDecoration(
                   gradient: AppTheme.cardGradient,
                   borderRadius: BorderRadius.circular(14),
@@ -67,13 +83,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     const Text(
                       'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
-                      style: TextStyle(fontSize: 20, fontFamily: 'ScheherazadeNew', color: AppTheme.accentGold, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: 'ScheherazadeNew',
+                          color: AppTheme.accentGold,
+                          fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 6),
                     Text(
                       'شروع الله کا نام لے کر جو بڑا مہربان نہایت رحم والا ہے',
-                      style: TextStyle(fontSize: 12, fontFamily: 'NotoNastaliqUrdu', color: Colors.white.withOpacity(0.6)),
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontFamily: 'NotoNastaliqUrdu',
+                          color: Colors.white.withOpacity(0.6)),
                       textAlign: TextAlign.center,
                     ),
                   ],
@@ -110,7 +133,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     FeatureCard(
                       icon: Icons.notifications_active_rounded,
                       titleUrdu: _s('yaadDehani'),
-                      subtitleUrdu: '${_s('reminderEvery')} ${widget.settingsService.reminderInterval} ${_s('minutes')}',
+                      subtitleUrdu:
+                          '${_s('reminderEvery')} ${widget.settingsService.reminderInterval} ${_s('minutes')}',
                       accentColor: const Color(0xFF9B59B6),
                       onTap: () => Navigator.pushNamed(context, '/reminder'),
                     ),
@@ -119,7 +143,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       titleUrdu: _s('settings'),
                       accentColor: const Color(0xFF7C3AED),
                       onTap: () {
-                        SettingsBottomSheet.show(context, settings: widget.settingsService, onChanged: () => setState(() {}));
+                        SettingsBottomSheet.show(context,
+                            settings: widget.settingsService,
+                            onChanged: () => setState(() {}));
                       },
                     ),
                   ],
@@ -139,7 +165,11 @@ class _NavItem extends StatelessWidget {
   final bool isActive;
   final VoidCallback onTap;
 
-  const _NavItem({required this.icon, required this.label, this.isActive = false, required this.onTap});
+  const _NavItem(
+      {required this.icon,
+      required this.label,
+      this.isActive = false,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -151,7 +181,9 @@ class _NavItem extends StatelessWidget {
         children: [
           Icon(icon, size: 20, color: color),
           const SizedBox(height: 3),
-          Text(label, style: TextStyle(fontSize: 10, fontFamily: 'NotoNastaliqUrdu', color: color)),
+          Text(label,
+              style: TextStyle(
+                  fontSize: 10, fontFamily: 'NotoNastaliqUrdu', color: color)),
         ],
       ),
     );

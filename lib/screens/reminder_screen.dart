@@ -63,7 +63,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
     QuranApp.restartTimer(context);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(_lang == 'ur' ? 'ترتیبات محفوظ ہو گئیں' : 'Settings saved',
+        content: Text(
+            _lang == 'ur' ? 'ترتیبات محفوظ ہو گئیں' : 'Settings saved',
             style: const TextStyle(fontFamily: 'NotoNastaliqUrdu')),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 2),
@@ -73,10 +74,14 @@ class _ReminderScreenState extends State<ReminderScreen> {
 
   String _typeLabel(ReminderType type) {
     switch (type) {
-      case ReminderType.allahNamesAll: return _s('allNames');
-      case ReminderType.allahNameSingle: return _s('specificName');
-      case ReminderType.quranRandom: return _s('randomVerses');
-      case ReminderType.quranSingleVerse: return _s('specificVerse');
+      case ReminderType.allahNamesAll:
+        return _s('allNames');
+      case ReminderType.allahNameSingle:
+        return _s('specificName');
+      case ReminderType.quranRandom:
+        return _s('randomVerses');
+      case ReminderType.quranSingleVerse:
+        return _s('specificVerse');
     }
   }
 
@@ -94,8 +99,11 @@ class _ReminderScreenState extends State<ReminderScreen> {
     );
     if (picked != null) {
       setState(() {
-        if (isStart) { _quietStart = picked.hour; }
-        else { _quietEnd = picked.hour; }
+        if (isStart) {
+          _quietStart = picked.hour;
+        } else {
+          _quietEnd = picked.hour;
+        }
       });
     }
   }
@@ -105,14 +113,17 @@ class _ReminderScreenState extends State<ReminderScreen> {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
+      shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
       builder: (ctx) => SizedBox(
         height: MediaQuery.of(context).size.height * 0.6,
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.all(12),
-              child: Text(_s('selectName'), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+              child: Text(_s('selectName'),
+                  style: const TextStyle(
+                      fontSize: 14, fontWeight: FontWeight.bold)),
             ),
             const Divider(height: 1),
             Expanded(
@@ -126,12 +137,18 @@ class _ReminderScreenState extends State<ReminderScreen> {
                     selectedTileColor: AppTheme.secondaryColor.withOpacity(0.1),
                     leading: CircleAvatar(
                       radius: 14,
-                      backgroundColor: isSelected ? AppTheme.secondaryColor : AppTheme.primaryColor,
+                      backgroundColor: isSelected
+                          ? AppTheme.secondaryColor
+                          : AppTheme.primaryColor,
                       foregroundColor: Colors.white,
-                      child: Text('${name.id}', style: const TextStyle(fontSize: 11)),
+                      child: Text('${name.id}',
+                          style: const TextStyle(fontSize: 11)),
                     ),
-                    title: Text(name.arabic, style: AppTheme.arabicBody.copyWith(fontSize: 16)),
-                    subtitle: Text('${name.transliteration} - ${name.urduMeaning}', style: const TextStyle(fontSize: 12)),
+                    title: Text(name.arabic,
+                        style: AppTheme.arabicBody.copyWith(fontSize: 16)),
+                    subtitle: Text(
+                        '${name.transliteration} - ${name.urduMeaning}',
+                        style: const TextStyle(fontSize: 12)),
                     onTap: () {
                       settings.specificNameIndex = name.id;
                       Navigator.pop(ctx);
@@ -153,14 +170,17 @@ class _ReminderScreenState extends State<ReminderScreen> {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
+      shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
       builder: (ctx) => SizedBox(
         height: MediaQuery.of(context).size.height * 0.6,
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.all(12),
-              child: Text(_s('selectVerse'), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+              child: Text(_s('selectVerse'),
+                  style: const TextStyle(
+                      fontSize: 14, fontWeight: FontWeight.bold)),
             ),
             const Divider(height: 1),
             Expanded(
@@ -168,18 +188,28 @@ class _ReminderScreenState extends State<ReminderScreen> {
                 itemCount: ayahs.length,
                 itemBuilder: (_, i) {
                   final ayah = ayahs[i];
-                  final isSelected = settings.specificVerseIndex == ayah.ayahNumber;
+                  final isSelected =
+                      settings.specificVerseIndex == ayah.ayahNumber;
                   return ListTile(
                     selected: isSelected,
                     selectedTileColor: AppTheme.secondaryColor.withOpacity(0.1),
                     leading: CircleAvatar(
                       radius: 14,
-                      backgroundColor: isSelected ? AppTheme.secondaryColor : AppTheme.primaryColor,
+                      backgroundColor: isSelected
+                          ? AppTheme.secondaryColor
+                          : AppTheme.primaryColor,
                       foregroundColor: Colors.white,
-                      child: Text('${ayah.ayahNumber}', style: const TextStyle(fontSize: 11)),
+                      child: Text('${ayah.ayahNumber}',
+                          style: const TextStyle(fontSize: 11)),
                     ),
-                    title: Text(ayah.arabicText, style: AppTheme.arabicBody.copyWith(fontSize: 14), maxLines: 1, overflow: TextOverflow.ellipsis),
-                    subtitle: Text(ayah.urduText, style: AppTheme.urduSubtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
+                    title: Text(ayah.arabicText,
+                        style: AppTheme.arabicBody.copyWith(fontSize: 14),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis),
+                    subtitle: Text(ayah.urduText,
+                        style: AppTheme.urduSubtitle,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis),
                     onTap: () {
                       settings.specificVerseIndex = ayah.ayahNumber;
                       Navigator.pop(ctx);
@@ -224,7 +254,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
 
   void _showNamePopup(int idx) {
     final name = assets.allahNames[(idx - 1) % assets.allahNames.length];
-    final closePopup = ReminderPopup.show(context,
+    final closePopup = ReminderPopup.show(
+      context,
       arabicText: name.arabic,
       englishText: name.transliteration,
       urduTranslation: name.urduMeaning,
@@ -236,7 +267,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
   }
 
   void _showVersePopup(ayah) {
-    final closePopup = ReminderPopup.show(context,
+    final closePopup = ReminderPopup.show(
+      context,
       arabicText: ayah.arabicText,
       urduTranslation: ayah.urduText,
       onDismiss: () => audio.stopAll(),
@@ -268,16 +300,22 @@ class _ReminderScreenState extends State<ReminderScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(_s('currentStatus'), style: const TextStyle(color: AppTheme.accentGold, fontSize: 14, fontWeight: FontWeight.bold)),
+                      Text(_s('currentStatus'),
+                          style: const TextStyle(
+                              color: AppTheme.accentGold,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold)),
                       const SizedBox(height: 10),
-                      _statusRow(Icons.timer_outlined, '${_s('reminderEvery')} $_interval ${_s('minutes')}'),
+                      _statusRow(Icons.timer_outlined,
+                          '${_s('reminderEvery')} $_interval ${_s('minutes')}'),
                       const SizedBox(height: 6),
                       _statusRow(Icons.category_outlined, _typeLabel(_type)),
                       const SizedBox(height: 6),
-                      _statusRow(Icons.nights_stay_outlined,
-                        _quietStart != null && _quietEnd != null
-                          ? '${_formatHour(_quietStart!)} - ${_formatHour(_quietEnd!)}'
-                          : _s('quietNotSet')),
+                      _statusRow(
+                          Icons.nights_stay_outlined,
+                          _quietStart != null && _quietEnd != null
+                              ? '${_formatHour(_quietStart!)} - ${_formatHour(_quietEnd!)}'
+                              : _s('quietNotSet')),
                     ],
                   ),
                 ),
@@ -287,22 +325,34 @@ class _ReminderScreenState extends State<ReminderScreen> {
                 _sectionTitle(_s('intervalLabel')),
                 Card(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Column(
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('1 ${_s('minutes')}', style: const TextStyle(fontSize: 12, color: AppTheme.textMuted)),
-                            Text('$_interval ${_s('minutes')}', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppTheme.secondaryColor)),
-                            Text('60 ${_s('minutes')}', style: const TextStyle(fontSize: 12, color: AppTheme.textMuted)),
+                            Text('1 ${_s('minutes')}',
+                                style: const TextStyle(
+                                    fontSize: 12, color: AppTheme.textMuted)),
+                            Text('$_interval ${_s('minutes')}',
+                                style: const TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppTheme.secondaryColor)),
+                            Text('60 ${_s('minutes')}',
+                                style: const TextStyle(
+                                    fontSize: 12, color: AppTheme.textMuted)),
                           ],
                         ),
                         Slider(
                           value: _interval.toDouble(),
-                          min: 1, max: 60, divisions: 59,
+                          min: 1,
+                          max: 60,
+                          divisions: 59,
                           activeColor: AppTheme.secondaryColor,
-                          onChanged: (v) => setState(() => _interval = v.round()),
+                          onChanged: (v) =>
+                              setState(() => _interval = v.round()),
                         ),
                       ],
                     ),
@@ -320,18 +370,27 @@ class _ReminderScreenState extends State<ReminderScreen> {
                         Expanded(
                           child: OutlinedButton.icon(
                             icon: const Icon(Icons.bedtime_outlined, size: 16),
-                            label: Text(_quietStart != null ? _formatHour(_quietStart!) : _s('quietStart'), style: const TextStyle(fontSize: 13)),
+                            label: Text(
+                                _quietStart != null
+                                    ? _formatHour(_quietStart!)
+                                    : _s('quietStart'),
+                                style: const TextStyle(fontSize: 13)),
                             onPressed: () => _pickHour(true),
                           ),
                         ),
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 8),
-                          child: Text('→', style: TextStyle(color: AppTheme.textMuted)),
+                          child: Text('→',
+                              style: TextStyle(color: AppTheme.textMuted)),
                         ),
                         Expanded(
                           child: OutlinedButton.icon(
                             icon: const Icon(Icons.wb_sunny_outlined, size: 16),
-                            label: Text(_quietEnd != null ? _formatHour(_quietEnd!) : _s('quietEnd'), style: const TextStyle(fontSize: 13)),
+                            label: Text(
+                                _quietEnd != null
+                                    ? _formatHour(_quietEnd!)
+                                    : _s('quietEnd'),
+                                style: const TextStyle(fontSize: 13)),
                             onPressed: () => _pickHour(false),
                           ),
                         ),
@@ -346,24 +405,28 @@ class _ReminderScreenState extends State<ReminderScreen> {
                 Card(
                   child: Column(
                     children: [
-                      _typeRadio(ReminderType.allahNamesAll, Icons.star_rounded),
-                      _typeRadio(ReminderType.allahNameSingle, Icons.star_half_rounded),
+                      _typeRadio(
+                          ReminderType.allahNamesAll, Icons.star_rounded),
+                      _typeRadio(ReminderType.allahNameSingle,
+                          Icons.star_half_rounded),
                       // Show pick button when specific name selected
                       if (_type == ReminderType.allahNameSingle)
                         _selectedItemTile(
                           assets.allahNames.isNotEmpty
-                            ? '${assets.allahNames[(settings.specificNameIndex - 1) % assets.allahNames.length].arabic} (${assets.allahNames[(settings.specificNameIndex - 1) % assets.allahNames.length].transliteration})'
-                            : _s('selectName'),
+                              ? '${assets.allahNames[(settings.specificNameIndex - 1) % assets.allahNames.length].arabic} (${assets.allahNames[(settings.specificNameIndex - 1) % assets.allahNames.length].transliteration})'
+                              : _s('selectName'),
                           onTap: _pickSpecificName,
                         ),
-                      _typeRadio(ReminderType.quranRandom, Icons.shuffle_rounded),
-                      _typeRadio(ReminderType.quranSingleVerse, Icons.bookmark_rounded),
+                      _typeRadio(
+                          ReminderType.quranRandom, Icons.shuffle_rounded),
+                      _typeRadio(ReminderType.quranSingleVerse,
+                          Icons.bookmark_rounded),
                       // Show pick button when specific verse selected
                       if (_type == ReminderType.quranSingleVerse)
                         _selectedItemTile(
                           (assets.surahData?.ayahs.isNotEmpty ?? false)
-                            ? '${_s('ayah')} ${settings.specificVerseIndex}'
-                            : _s('selectVerse'),
+                              ? '${_s('ayah')} ${settings.specificVerseIndex}'
+                              : _s('selectVerse'),
                           onTap: _pickSpecificVerse,
                         ),
                     ],
@@ -376,7 +439,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
                 ElevatedButton.icon(
                   icon: const Icon(Icons.play_arrow_rounded, size: 18),
                   label: Text(_s('testReminder')),
-                  style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(44)),
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(44)),
                   onPressed: _testReminder,
                 ),
                 const SizedBox(height: 10),
@@ -385,7 +449,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
                     Expanded(
                       child: OutlinedButton(
                         onPressed: () => Navigator.pop(context),
-                        style: OutlinedButton.styleFrom(minimumSize: const Size.fromHeight(44)),
+                        style: OutlinedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(44)),
                         child: Text(_lang == 'ur' ? 'منسوخ' : 'Cancel'),
                       ),
                     ),
@@ -396,7 +461,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
                           _saveAll();
                           Navigator.pop(context);
                         },
-                        style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(44)),
+                        style: ElevatedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(44)),
                         child: Text(_s('savePreferences')),
                       ),
                     ),
@@ -411,7 +477,11 @@ class _ReminderScreenState extends State<ReminderScreen> {
   Widget _sectionTitle(String title) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8, left: 4),
-      child: Text(title, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: AppTheme.primaryColor)),
+      child: Text(title,
+          style: const TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+              color: AppTheme.primaryColor)),
     );
   }
 
@@ -420,7 +490,9 @@ class _ReminderScreenState extends State<ReminderScreen> {
       children: [
         Icon(icon, size: 16, color: Colors.white70),
         const SizedBox(width: 8),
-        Expanded(child: Text(text, style: const TextStyle(color: Colors.white70, fontSize: 13))),
+        Expanded(
+            child: Text(text,
+                style: const TextStyle(color: Colors.white70, fontSize: 13))),
       ],
     );
   }
@@ -430,7 +502,9 @@ class _ReminderScreenState extends State<ReminderScreen> {
       value: type,
       groupValue: _type,
       dense: true,
-      secondary: Icon(icon, size: 18, color: _type == type ? AppTheme.secondaryColor : AppTheme.textMuted),
+      secondary: Icon(icon,
+          size: 18,
+          color: _type == type ? AppTheme.secondaryColor : AppTheme.textMuted),
       title: Text(_typeLabel(type), style: const TextStyle(fontSize: 13)),
       onChanged: (v) => setState(() => _type = v!),
     );
@@ -451,7 +525,10 @@ class _ReminderScreenState extends State<ReminderScreen> {
           ),
           child: Row(
             children: [
-              Expanded(child: Text(text, style: const TextStyle(fontSize: 13, color: AppTheme.secondaryColor))),
+              Expanded(
+                  child: Text(text,
+                      style: const TextStyle(
+                          fontSize: 13, color: AppTheme.secondaryColor))),
               const Icon(Icons.edit, size: 14, color: AppTheme.secondaryColor),
             ],
           ),
