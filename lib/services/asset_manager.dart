@@ -34,7 +34,7 @@ class AssetManager {
       // Download Arabic audio
       File arabicFile = File('${appDocDir.path}/fatiha_001_$num.mp3');
       if (!await arabicFile.exists()) {
-        onProgress("Downloading Ayah $num Arabic audio...");
+        onProgress('Downloading Ayah $num Arabic audio...');
         bool ok = await _downloadFile(ayah.audioPrimary, arabicFile);
         if (!ok) ok = await _downloadFile(ayah.audioFallback, arabicFile);
       }
@@ -43,7 +43,7 @@ class AssetManager {
       // Download Urdu audio
       File urduFile = File('${appDocDir.path}/fatiha_001_${num}_ur.mp3');
       if (!await urduFile.exists()) {
-        onProgress("Downloading Ayah $num Urdu audio...");
+        onProgress('Downloading Ayah $num Urdu audio...');
         await _downloadFile(ayah.urduAudio, urduFile);
       }
       if (await urduFile.exists()) urduAudioPaths[num] = urduFile.path;
@@ -59,7 +59,7 @@ class AssetManager {
         return true;
       }
     } catch (e) {
-      print("Download error: $e");
+      print('Download error: $e');
     }
     return false;
   }

@@ -75,7 +75,7 @@ class _SettingsContentState extends State<_SettingsContent> {
                 widget.settings.language = _lang;
                 widget.onChanged();
               },
-              style: ButtonStyle(
+              style: const ButtonStyle(
                 visualDensity: VisualDensity.compact,
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               ),

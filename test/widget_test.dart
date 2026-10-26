@@ -1,30 +1,58 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:quran_temp_scaffold/main.dart';
+import 'package:quran_urdu_app/models/ayah.dart';
+import 'package:quran_urdu_app/models/allah_name.dart';
+import 'package:quran_urdu_app/models/surah.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  test('Ayah.fromJson parses correctly', () {
+    final json = {
+      'ayah_number': 1,
+      'arabic_text': 'بِسْمِ ٱللَّهِ',
+      'phonetic_keywords': ['bismillah'],
+      'urdu_text': 'شروع الله کا نام',
+      'audio_primary': 'https://example.com/1.mp3',
+      'audio_fallback': 'https://example.com/1f.mp3',
+      'urdu_audio': 'https://example.com/1u.mp3',
+    };
+    final ayah = Ayah.fromJson(json);
+    expect(ayah.ayahNumber, 1);
+    expect(ayah.arabicText, 'بِسْمِ ٱللَّهِ');
+    expect(ayah.phoneticKeywords, ['bismillah']);
+  });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+  test('AllahName.fromJson parses correctly', () {
+    final json = {
+      'id': 1,
+      'arabic': 'الرَّحْمَـٰنُ',
+      'transliteration': 'Ar-Rahmaan',
+      'urdu_meaning': 'بے حد رحم کرنے والا',
+    };
+    final name = AllahName.fromJson(json);
+    expect(name.id, 1);
+    expect(name.transliteration, 'Ar-Rahmaan');
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  test('Surah.fromJson parses with ayahs', () {
+    final json = {
+      'surah_number': 1,
+      'name_arabic': 'الفاتحة',
+      'name_urdu': 'سورۃ الفاتحہ',
+      'total_ayahs': 1,
+      'ayahs': [
+        {
+          'ayah_number': 1,
+          'arabic_text': 'بِسْمِ ٱللَّهِ',
+          'phonetic_keywords': ['bismillah'],
+          'urdu_text': 'شروع الله کا نام',
+          'audio_primary': 'https://example.com/1.mp3',
+          'audio_fallback': 'https://example.com/1f.mp3',
+          'urdu_audio': 'https://example.com/1u.mp3',
+        }
+      ],
+    };
+    final surah = Surah.fromJson(json);
+    expect(surah.surahNumber, 1);
+    expect(surah.ayahs.length, 1);
+    expect(surah.nameUrdu, 'سورۃ الفاتحہ');
   });
 }

@@ -78,9 +78,9 @@ class AudioService {
   }
 
   Future<void> speakText(String text,
-      {String language = "ur-PK", double rate = 0.45}) async {
+      {String language = 'ur-PK', double rate = 0.45}) async {
     if (Platform.isLinux) {
-      String espeakLang = language.startsWith("ar") ? "ar" : "ur";
+      String espeakLang = language.startsWith('ar') ? 'ar' : 'ur';
       int speed = (150 * rate).round();
       await Process.run('espeak-ng', ['-v', espeakLang, '-s', '$speed', text]);
     } else {
@@ -89,7 +89,7 @@ class AudioService {
         await _flutterTts.setSpeechRate(rate);
         await _flutterTts.speak(text);
       } catch (e) {
-        print("TTS not available: $e");
+        print('TTS not available: $e');
       }
     }
   }

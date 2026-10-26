@@ -37,7 +37,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
   }
 
   Future<void> _vibrate({int duration = 200}) async {
-    if (await Vibration.hasVibrator() ?? false) {
+    if (await Vibration.hasVibrator()) {
       Vibration.vibrate(duration: duration);
     }
   }
