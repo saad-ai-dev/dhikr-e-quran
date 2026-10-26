@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest a new feature for Dhikr-e-Quran
+about: Suggest a new feature
 title: ''
 labels: 'feature'
 assignees: 'saad-ai-dev'
@@ -9,13 +9,18 @@ assignees: 'saad-ai-dev'
 ## Description
 A clear description of the feature.
 
+## Use Case
+Why is this feature needed? What problem does it solve?
+
 ## Requirements
 - [ ] Requirement 1
 - [ ] Requirement 2
 - [ ] Requirement 3
 
-## Priority
-High / Medium / Low
+## Design / Mockups
+Any screenshots, mockups, or design references.
 
-## Additional Context
-Any screenshots, mockups, or references.
+## Priority
+- [ ] High — Core functionality
+- [ ] Medium — Important enhancement
+- [ ] Low — Nice to have

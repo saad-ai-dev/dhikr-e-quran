@@ -1,0 +1,14 @@
+# Default owner for everything
+* @saad-ai-dev
+
+# Core app code
+/lib/ @saad-ai-dev
+
+# CI and workflows
+/.github/ @saad-ai-dev
+
+# Android platform
+/android/ @saad-ai-dev
+
+# Assets and data
+/assets/ @saad-ai-dev

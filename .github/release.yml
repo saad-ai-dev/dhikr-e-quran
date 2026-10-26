@@ -1,0 +1,27 @@
+changelog:
+  exclude:
+    labels:
+      - dependencies
+      - duplicate
+      - invalid
+      - wontfix
+  categories:
+    - title: "New Features"
+      labels:
+        - feature
+        - enhancement
+    - title: "Bug Fixes"
+      labels:
+        - bug
+    - title: "Design & UI"
+      labels:
+        - design
+    - title: "Audio"
+      labels:
+        - audio
+    - title: "Documentation"
+      labels:
+        - documentation
+    - title: "Other Changes"
+      labels:
+        - "*"
