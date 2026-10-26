@@ -33,7 +33,7 @@ linter:
 
     # Readability
     prefer_final_fields: true
-    prefer_final_local_variables: true
+    prefer_final_locals: true
     unnecessary_this: true
     prefer_is_empty: true
     prefer_is_not_empty: true
