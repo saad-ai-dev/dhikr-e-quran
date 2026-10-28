@@ -1,0 +1,88 @@
+{
+  "collections": [
+    {
+      "id": "bukhari",
+      "name_en": "Sahih al-Bukhari",
+      "name_ur": "صحیح البخاری",
+      "hadiths": [
+        {
+          "number": 1,
+          "arabic": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+          "urdu": "اعمال کا دارومدار نیتوں پر ہے اور ہر شخص کو وہی ملے گا جس کی اس نے نیت کی",
+          "english": "Actions are judged by intentions, and everyone will get what they intended",
+          "reference": "Bukhari 1"
+        },
+        {
+          "number": 6,
+          "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+          "urdu": "مسلمان وہ ہے جس کی زبان اور ہاتھ سے دوسرے مسلمان محفوظ رہیں",
+          "english": "A Muslim is the one from whose tongue and hand other Muslims are safe",
+          "reference": "Bukhari 10"
+        },
+        {
+          "number": 13,
+          "arabic": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+          "urdu": "تم میں سے کوئی شخص اس وقت تک مومن نہیں ہو سکتا جب تک وہ اپنے بھائی کے لیے وہی پسند نہ کرے جو اپنے لیے پسند کرتا ہے",
+          "english": "None of you truly believes until he loves for his brother what he loves for himself",
+          "reference": "Bukhari 13"
+        },
+        {
+          "number": 52,
+          "arabic": "إِنَّ الْحَلاَلَ بَيِّنٌ وَإِنَّ الْحَرَامَ بَيِّنٌ",
+          "urdu": "حلال واضح ہے اور حرام بھی واضح ہے",
+          "english": "What is lawful is clear and what is unlawful is clear",
+          "reference": "Bukhari 52"
+        },
+        {
+          "number": 6018,
+          "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+          "urdu": "جو شخص اللہ اور آخرت کے دن پر ایمان رکھتا ہے اسے چاہیے کہ اچھی بات کہے یا خاموش رہے",
+          "english": "Whoever believes in Allah and the Last Day should speak good or keep silent",
+          "reference": "Bukhari 6018"
+        }
+      ]
+    },
+    {
+      "id": "muslim",
+      "name_en": "Sahih Muslim",
+      "name_ur": "صحیح مسلم",
+      "hadiths": [
+        {
+          "number": 1,
+          "arabic": "الدِّينُ النَّصِيحَةُ",
+          "urdu": "دین نصیحت کا نام ہے",
+          "english": "The religion is sincere advice",
+          "reference": "Muslim 55"
+        },
+        {
+          "number": 2,
+          "arabic": "لاَ يَدْخُلُ الْجَنَّةَ مَنْ كَانَ فِي قَلْبِهِ مِثْقَالُ ذَرَّةٍ مِنْ كِبْرٍ",
+          "urdu": "جنت میں وہ شخص داخل نہیں ہوگا جس کے دل میں ذرہ برابر بھی تکبر ہو",
+          "english": "No one who has an atom's weight of arrogance in his heart will enter Paradise",
+          "reference": "Muslim 91"
+        },
+        {
+          "number": 3,
+          "arabic": "إِنَّ اللَّهَ لاَ يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+          "urdu": "اللہ تعالیٰ تمہاری صورتوں اور مالوں کو نہیں دیکھتا بلکہ تمہارے دلوں اور اعمال کو دیکھتا ہے",
+          "english": "Allah does not look at your appearances or wealth, but looks at your hearts and actions",
+          "reference": "Muslim 2564"
+        },
+        {
+          "number": 4,
+          "arabic": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ طَرِيقًا إِلَى الْجَنَّةِ",
+          "urdu": "جو شخص علم حاصل کرنے کے لیے کسی راستے پر چلتا ہے اللہ اس کے لیے جنت کا راستہ آسان کر دیتا ہے",
+          "english": "Whoever follows a path seeking knowledge, Allah will make easy for him a path to Paradise",
+          "reference": "Muslim 2699"
+        },
+        {
+          "number": 5,
+          "arabic": "الطُّهُورُ شَطْرُ الإِيمَانِ",
+          "urdu": "پاکیزگی آدھا ایمان ہے",
+          "english": "Cleanliness is half of faith",
+          "reference": "Muslim 223"
+        }
+      ]
+    }
+  ]
+}
