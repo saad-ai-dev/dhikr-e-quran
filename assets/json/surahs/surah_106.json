@@ -1,0 +1,54 @@
+{
+  "surah_number": 106,
+  "name_arabic": "سُورَةُ قُرَيۡشٍ",
+  "name_english": "Quraish",
+  "name_urdu": "Quraysh",
+  "revelation_type": "Meccan",
+  "total_ayahs": 4,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6194,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لِإِيلَٰفِ قُرَيْشٍ",
+      "urdu_text": "قریش کے مانوس کرنے کے سبب",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6194.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/106001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/106001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6195,
+      "arabic_text": "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+      "urdu_text": "(یعنی) ان کو جاڑے اور گرمی کے سفر سے مانوس کرنے کے سبب",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6195.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/106002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/106002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6196,
+      "arabic_text": "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ",
+      "urdu_text": "لوگوں کو چاہیئے کہ (اس نعمت کے شکر میں) اس گھر کے مالک کی عبادت کریں",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6196.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/106003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/106003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6197,
+      "arabic_text": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍۢ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+      "urdu_text": "جس نے ان کو بھوک میں کھانا کھلایا اور خوف سے امن بخشا",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6197.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/106004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/106004.mp3"
+    }
+  ]
+}

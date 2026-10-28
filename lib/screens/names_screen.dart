@@ -41,7 +41,7 @@ class _NamesScreenState extends State<NamesScreen> {
       setState(() => _isLoading = false);
       return;
     }
-    await widget.assetManager.loadAllData(onProgress: (_) {});
+    await widget.assetManager.loadBaseData();
     if (mounted) setState(() => _isLoading = false);
   }
 

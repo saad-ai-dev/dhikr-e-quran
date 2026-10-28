@@ -1,0 +1,230 @@
+{
+  "surah_number": 90,
+  "name_arabic": "سُورَةُ البَلَدِ",
+  "name_english": "Al-Balad",
+  "name_urdu": "The City",
+  "revelation_type": "Meccan",
+  "total_ayahs": 20,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6024,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+      "urdu_text": "ہمیں اس شہر (مکہ) کی قسم",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6024.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6025,
+      "arabic_text": "وَأَنتَ حِلٌّۢ بِهَٰذَا ٱلْبَلَدِ",
+      "urdu_text": "اور تم اسی شہر میں تو رہتے ہو",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6025.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6026,
+      "arabic_text": "وَوَالِدٍۢ وَمَا وَلَدَ",
+      "urdu_text": "اور باپ (یعنی آدم) اور اس کی اولاد کی قسم",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6026.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6027,
+      "arabic_text": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+      "urdu_text": "کہ ہم نے انسان کو تکلیف (کی حالت) میں (رہنے والا) بنایا ہے",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6027.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6028,
+      "arabic_text": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌۭ",
+      "urdu_text": "کیا وہ خیال رکھتا ہے کہ اس پر کوئی قابو نہ پائے گا",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6028.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6029,
+      "arabic_text": "يَقُولُ أَهْلَكْتُ مَالًۭا لُّبَدًا",
+      "urdu_text": "کہتا ہے کہ میں نے بہت سا مال برباد کیا",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6029.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 6030,
+      "arabic_text": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+      "urdu_text": "کیا اسے یہ گمان ہے کہ اس کو کسی نے دیکھا نہیں",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6030.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 6031,
+      "arabic_text": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+      "urdu_text": "بھلا ہم نےاس کو دو آنکھیں نہیں دیں؟",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6031.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090008.mp3"
+    },
+    {
+      "ayah_number": 9,
+      "global_number": 6032,
+      "arabic_text": "وَلِسَانًۭا وَشَفَتَيْنِ",
+      "urdu_text": "اور زبان اور دو ہونٹ (نہیں دیئے)",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6032.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090009.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090009.mp3"
+    },
+    {
+      "ayah_number": 10,
+      "global_number": 6033,
+      "arabic_text": "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ",
+      "urdu_text": "(یہ چیزیں بھی دیں) اور اس کو (خیر و شر کے) دونوں رستے بھی دکھا دیئے",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6033.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090010.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090010.mp3"
+    },
+    {
+      "ayah_number": 11,
+      "global_number": 6034,
+      "arabic_text": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+      "urdu_text": "مگر وہ گھاٹی پر سے ہو کر نہ گزرا",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6034.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090011.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090011.mp3"
+    },
+    {
+      "ayah_number": 12,
+      "global_number": 6035,
+      "arabic_text": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+      "urdu_text": "اور تم کیا سمجھے کہ گھاٹی کیا ہے؟",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6035.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090012.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090012.mp3"
+    },
+    {
+      "ayah_number": 13,
+      "global_number": 6036,
+      "arabic_text": "فَكُّ رَقَبَةٍ",
+      "urdu_text": "کسی (کی) گردن کا چھڑانا",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6036.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090013.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090013.mp3"
+    },
+    {
+      "ayah_number": 14,
+      "global_number": 6037,
+      "arabic_text": "أَوْ إِطْعَٰمٌۭ فِى يَوْمٍۢ ذِى مَسْغَبَةٍۢ",
+      "urdu_text": "یا بھوک کے دن کھانا کھلانا",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6037.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090014.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090014.mp3"
+    },
+    {
+      "ayah_number": 15,
+      "global_number": 6038,
+      "arabic_text": "يَتِيمًۭا ذَا مَقْرَبَةٍ",
+      "urdu_text": "یتیم رشتہ دار کو",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6038.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090015.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090015.mp3"
+    },
+    {
+      "ayah_number": 16,
+      "global_number": 6039,
+      "arabic_text": "أَوْ مِسْكِينًۭا ذَا مَتْرَبَةٍۢ",
+      "urdu_text": "یا فقیر خاکسار کو",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6039.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090016.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090016.mp3"
+    },
+    {
+      "ayah_number": 17,
+      "global_number": 6040,
+      "arabic_text": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+      "urdu_text": "پھر ان لوگوں میں بھی (داخل) ہو جو ایمان لائے اور صبر کی نصیحت اور (لوگوں پر) شفقت کرنے کی وصیت کرتے رہے",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6040.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090017.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090017.mp3"
+    },
+    {
+      "ayah_number": 18,
+      "global_number": 6041,
+      "arabic_text": "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+      "urdu_text": "یہی لوگ صاحب سعادت ہیں",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6041.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090018.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090018.mp3"
+    },
+    {
+      "ayah_number": 19,
+      "global_number": 6042,
+      "arabic_text": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+      "urdu_text": "اور جنہوں نے ہماری آیتوں کو نہ مانا وہ بدبخت ہیں",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6042.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090019.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090019.mp3"
+    },
+    {
+      "ayah_number": 20,
+      "global_number": 6043,
+      "arabic_text": "عَلَيْهِمْ نَارٌۭ مُّؤْصَدَةٌۢ",
+      "urdu_text": "یہ لوگ آگ میں بند کر دیئے جائیں گے",
+      "juz": 30,
+      "page": 594,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6043.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/090020.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/090020.mp3"
+    }
+  ]
+}

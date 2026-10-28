@@ -1,0 +1,131 @@
+{
+  "surah_number": 101,
+  "name_arabic": "سُورَةُ القَارِعَةِ",
+  "name_english": "Al-Qaari'a",
+  "name_urdu": "The Calamity",
+  "revelation_type": "Meccan",
+  "total_ayahs": 11,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6158,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+      "urdu_text": "کھڑ کھڑانے والی",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6158.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6159,
+      "arabic_text": "مَا ٱلْقَارِعَةُ",
+      "urdu_text": "کھڑ کھڑانے والی کیا ہے؟",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6159.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6160,
+      "arabic_text": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "urdu_text": "اور تم کیا جانوں کھڑ کھڑانے والی کیا ہے؟",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6160.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6161,
+      "arabic_text": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "urdu_text": "(وہ قیامت ہے) جس دن لوگ ایسے ہوں گے جیسے بکھرے ہوئے پتنگے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6161.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6162,
+      "arabic_text": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "urdu_text": "اور پہاڑ ایسے ہو جائیں گے جیسے دھنکی ہوئی رنگ برنگ کی اون",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6162.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6163,
+      "arabic_text": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "urdu_text": "تو جس کے (اعمال کے) وزن بھاری نکلیں گے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6163.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 6164,
+      "arabic_text": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
+      "urdu_text": "وہ دل پسند عیش میں ہو گا",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6164.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 6165,
+      "arabic_text": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "urdu_text": "اور جس کے وزن ہلکے نکلیں گے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6165.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101008.mp3"
+    },
+    {
+      "ayah_number": 9,
+      "global_number": 6166,
+      "arabic_text": "فَأُمُّهُۥ هَاوِيَةٌۭ",
+      "urdu_text": "اس کا مرجع ہاویہ ہے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6166.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101009.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101009.mp3"
+    },
+    {
+      "ayah_number": 10,
+      "global_number": 6167,
+      "arabic_text": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "urdu_text": "اور تم کیا سمجھے کہ ہاویہ کیا چیز ہے؟",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6167.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101010.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101010.mp3"
+    },
+    {
+      "ayah_number": 11,
+      "global_number": 6168,
+      "arabic_text": "نَارٌ حَامِيَةٌۢ",
+      "urdu_text": "دہکتی ہوئی آگ ہے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6168.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/101011.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/101011.mp3"
+    }
+  ]
+}

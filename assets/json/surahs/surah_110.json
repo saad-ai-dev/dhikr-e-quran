@@ -1,0 +1,43 @@
+{
+  "surah_number": 110,
+  "name_arabic": "سُورَةُ النَّصۡرِ",
+  "name_english": "An-Nasr",
+  "name_urdu": "Divine Support",
+  "revelation_type": "Medinan",
+  "total_ayahs": 3,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6214,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "urdu_text": "جب خدا کی مدد آ پہنچی اور فتح (حاصل ہو گئی)",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6214.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/110001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/110001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6215,
+      "arabic_text": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا",
+      "urdu_text": "اور تم نے دیکھ لیا کہ لوگ غول کے غول خدا کے دین میں داخل ہو رہے ہیں",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6215.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/110002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/110002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6216,
+      "arabic_text": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "urdu_text": "تو اپنے پروردگار کی تعریف کے ساتھ تسبیح کرو اور اس سے مغفرت مانگو، بے شک وہ معاف کرنے والا ہے",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6216.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/110003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/110003.mp3"
+    }
+  ]
+}

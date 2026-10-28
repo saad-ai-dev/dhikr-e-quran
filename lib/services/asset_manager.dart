@@ -8,46 +8,66 @@ import '../models/allah_name.dart';
 import '../models/ayah.dart';
 
 class AssetManager {
-  Surah? surahData;
+  List<SurahMeta> surahIndex = [];
+  Surah? currentSurah;
   List<AllahName> allahNames = [];
   Map<int, String> arabicAudioPaths = {};
   Map<int, String> urduAudioPaths = {};
 
-  bool get isReady => surahData != null;
+  bool get isReady => surahIndex.isNotEmpty && allahNames.isNotEmpty;
 
-  Future<void> loadAllData({required void Function(String) onProgress}) async {
-    String fatihaJson =
-        await rootBundle.loadString('assets/json/surah_fatiha.json');
-    surahData = Surah.fromJson(jsonDecode(fatihaJson));
+  Future<void> loadBaseData() async {
+    if (isReady) return;
 
-    String namesJson =
+    final indexJson =
+        await rootBundle.loadString('assets/json/surah_index.json');
+    surahIndex = (jsonDecode(indexJson) as List)
+        .map((s) => SurahMeta.fromJson(s))
+        .toList();
+
+    final namesJson =
         await rootBundle.loadString('assets/json/allah_names.json');
     allahNames = (jsonDecode(namesJson) as List)
         .map((n) => AllahName.fromJson(n))
         .toList();
+  }
 
-    Directory appDocDir = await getApplicationDocumentsDirectory();
+  Future<Surah> loadSurah(int surahNumber,
+      {void Function(String)? onProgress}) async {
+    final padded = surahNumber.toString().padLeft(3, '0');
+    final json =
+        await rootBundle.loadString('assets/json/surahs/surah_$padded.json');
+    currentSurah = Surah.fromJson(jsonDecode(json));
 
-    for (Ayah ayah in surahData!.ayahs) {
-      int num = ayah.ayahNumber;
+    // Download audio for this surah
+    arabicAudioPaths.clear();
+    urduAudioPaths.clear();
+    final appDocDir = await getApplicationDocumentsDirectory();
 
-      // Download Arabic audio
-      File arabicFile = File('${appDocDir.path}/fatiha_001_$num.mp3');
+    for (final ayah in currentSurah!.ayahs) {
+      final num = ayah.ayahNumber;
+      final sNum = surahNumber;
+
+      final arabicFile = File('${appDocDir.path}/surah_${sNum}_${num}_ar.mp3');
       if (!await arabicFile.exists()) {
-        onProgress('Downloading Ayah $num Arabic audio...');
-        bool ok = await _downloadFile(ayah.audioPrimary, arabicFile);
-        if (!ok) ok = await _downloadFile(ayah.audioFallback, arabicFile);
+        onProgress?.call('Downloading Ayah $num...');
+        final ok = await _downloadFile(ayah.audioPrimary, arabicFile);
+        if (!ok) await _downloadFile(ayah.audioFallback, arabicFile);
       }
-      if (await arabicFile.exists()) arabicAudioPaths[num] = arabicFile.path;
+      if (await arabicFile.exists()) {
+        arabicAudioPaths[num] = arabicFile.path;
+      }
 
-      // Download Urdu audio
-      File urduFile = File('${appDocDir.path}/fatiha_001_${num}_ur.mp3');
+      final urduFile = File('${appDocDir.path}/surah_${sNum}_${num}_ur.mp3');
       if (!await urduFile.exists()) {
-        onProgress('Downloading Ayah $num Urdu audio...');
         await _downloadFile(ayah.urduAudio, urduFile);
       }
-      if (await urduFile.exists()) urduAudioPaths[num] = urduFile.path;
+      if (await urduFile.exists()) {
+        urduAudioPaths[num] = urduFile.path;
+      }
     }
+
+    return currentSurah!;
   }
 
   Future<bool> _downloadFile(String url, File target) async {

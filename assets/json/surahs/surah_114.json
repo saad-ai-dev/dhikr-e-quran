@@ -1,0 +1,76 @@
+{
+  "surah_number": 114,
+  "name_arabic": "سُورَةُ النَّاسِ",
+  "name_english": "An-Naas",
+  "name_urdu": "Mankind",
+  "revelation_type": "Meccan",
+  "total_ayahs": 6,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6231,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "urdu_text": "کہو کہ میں لوگوں کے پروردگار کی پناہ مانگتا ہوں",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6231.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6232,
+      "arabic_text": "مَلِكِ ٱلنَّاسِ",
+      "urdu_text": "(یعنی) لوگوں کے حقیقی بادشاہ کی",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6232.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6233,
+      "arabic_text": "إِلَٰهِ ٱلنَّاسِ",
+      "urdu_text": "لوگوں کے معبود برحق کی",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6233.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6234,
+      "arabic_text": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "urdu_text": "(شیطان) وسوسہ انداز کی برائی سے جو (خدا کا نام سن کر) پیچھے ہٹ جاتا ہے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6234.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6235,
+      "arabic_text": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "urdu_text": "جو لوگوں کے دلوں میں وسوسے ڈالتا ہے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6235.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6236,
+      "arabic_text": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "urdu_text": "وہ جنّات میں سے (ہو) یا انسانوں میں سے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6236.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/114006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/114006.mp3"
+    }
+  ]
+}

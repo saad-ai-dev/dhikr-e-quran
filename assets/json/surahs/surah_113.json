@@ -1,0 +1,65 @@
+{
+  "surah_number": 113,
+  "name_arabic": "سُورَةُ الفَلَقِ",
+  "name_english": "Al-Falaq",
+  "name_urdu": "The Dawn",
+  "revelation_type": "Meccan",
+  "total_ayahs": 5,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6226,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "urdu_text": "کہو کہ میں صبح کے پروردگار کی پناہ مانگتا ہوں",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6226.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/113001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/113001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6227,
+      "arabic_text": "مِن شَرِّ مَا خَلَقَ",
+      "urdu_text": "ہر چیز کی بدی سے جو اس نے پیدا کی",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6227.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/113002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/113002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6228,
+      "arabic_text": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "urdu_text": "اور شب تاریکی کی برائی سے جب اس کااندھیرا چھا جائے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6228.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/113003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/113003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6229,
+      "arabic_text": "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
+      "urdu_text": "اور گنڈوں پر (پڑھ پڑھ کر) پھونکنے والیوں کی برائی سے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6229.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/113004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/113004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6230,
+      "arabic_text": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "urdu_text": "اور حسد کرنے والے کی برائی سے جب حسد کرنے لگے",
+      "juz": 30,
+      "page": 604,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6230.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/113005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/113005.mp3"
+    }
+  ]
+}

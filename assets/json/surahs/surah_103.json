@@ -1,0 +1,43 @@
+{
+  "surah_number": 103,
+  "name_arabic": "سُورَةُ العَصۡرِ",
+  "name_english": "Al-Asr",
+  "name_urdu": "The Declining Day, Epoch",
+  "revelation_type": "Meccan",
+  "total_ayahs": 3,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6177,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+      "urdu_text": "عصر کی قسم",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6177.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/103001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/103001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6178,
+      "arabic_text": "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ",
+      "urdu_text": "کہ انسان نقصان میں ہے",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6178.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/103002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/103002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6179,
+      "arabic_text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "urdu_text": "مگر وہ لوگ جو ایمان لائے اور نیک عمل کرتے رہے اور آپس میں حق (بات) کی تلقین اور صبر کی تاکید کرتے رہے",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6179.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/103003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/103003.mp3"
+    }
+  ]
+}

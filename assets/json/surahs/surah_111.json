@@ -1,0 +1,65 @@
+{
+  "surah_number": 111,
+  "name_arabic": "سُورَةُ المَسَدِ",
+  "name_english": "Al-Masad",
+  "name_urdu": "The Palm Fibre",
+  "revelation_type": "Meccan",
+  "total_ayahs": 5,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6217,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
+      "urdu_text": "ابولہب کے ہاتھ ٹوٹیں اور وہ ہلاک ہو",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6217.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/111001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/111001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6218,
+      "arabic_text": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "urdu_text": "نہ تو اس کا مال ہی اس کے کچھ کام آیا اور نہ وہ جو اس نے کمایا",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6218.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/111002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/111002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6219,
+      "arabic_text": "سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ",
+      "urdu_text": "وہ جلد بھڑکتی ہوئی آگ میں داخل ہو گا",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6219.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/111003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/111003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6220,
+      "arabic_text": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "urdu_text": "اور اس کی جورو بھی جو ایندھن سر پر اٹھائے پھرتی ہے",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6220.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/111004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/111004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6221,
+      "arabic_text": "فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ",
+      "urdu_text": "اس کے گلے میں مونج کی رسّی ہو گی",
+      "juz": 30,
+      "page": 603,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6221.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/111005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/111005.mp3"
+    }
+  ]
+}

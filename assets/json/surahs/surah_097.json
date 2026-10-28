@@ -1,0 +1,65 @@
+{
+  "surah_number": 97,
+  "name_arabic": "سُورَةُ القَدۡرِ",
+  "name_english": "Al-Qadr",
+  "name_urdu": "The Power, Fate",
+  "revelation_type": "Meccan",
+  "total_ayahs": 5,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6126,
+      "arabic_text": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "urdu_text": "ہم نے اس (قرآن) کو شب قدر میں نازل (کرنا شروع) کیا",
+      "juz": 30,
+      "page": 598,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6126.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/097001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/097001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6127,
+      "arabic_text": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "urdu_text": "اور تمہیں کیا معلوم کہ شب قدر کیا ہے؟",
+      "juz": 30,
+      "page": 598,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6127.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/097002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/097002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6128,
+      "arabic_text": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+      "urdu_text": "شب قدر ہزار مہینے سے بہتر ہے",
+      "juz": 30,
+      "page": 598,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6128.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/097003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/097003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6129,
+      "arabic_text": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+      "urdu_text": "اس میں روح (الامین) اور فرشتے ہر کام کے (انتظام کے) لیے اپنے پروردگار کے حکم سے اترتے ہیں",
+      "juz": 30,
+      "page": 598,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6129.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/097004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/097004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6130,
+      "arabic_text": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "urdu_text": "یہ (رات) طلوع صبح تک (امان اور) سلامتی ہے",
+      "juz": 30,
+      "page": 598,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6130.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/097005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/097005.mp3"
+    }
+  ]
+}
