@@ -1,0 +1,219 @@
+{
+  "surah_number": 87,
+  "name_arabic": "سُورَةُ الأَعۡلَىٰ",
+  "name_english": "Al-A'laa",
+  "name_urdu": "The Most High",
+  "revelation_type": "Meccan",
+  "total_ayahs": 19,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 5949,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+      "urdu_text": "(اے پیغمبر) اپنے پروردگار جلیل الشان کے نام کی تسبیح کرو",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5949.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 5950,
+      "arabic_text": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+      "urdu_text": "جس نے (انسان کو) بنایا پھر (اس کے اعضاء کو) درست کیا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5950.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 5951,
+      "arabic_text": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+      "urdu_text": "اور جس نے (اس کا) اندازہ ٹہرایا (پھر اس کو) رستہ بتایا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5951.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 5952,
+      "arabic_text": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+      "urdu_text": "اور جس نے چارہ اگایا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5952.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 5953,
+      "arabic_text": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+      "urdu_text": "پھر اس کو سیاہ رنگ کا کوڑا کر دیا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5953.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 5954,
+      "arabic_text": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+      "urdu_text": "ہم تمہیں پڑھا دیں گے کہ تم فراموش نہ کرو گے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5954.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 5955,
+      "arabic_text": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
+      "urdu_text": "مگر جو خدا چاہے۔ وہ کھلی بات کو بھی جانتا ہے اور چھپی کو بھی",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5955.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 5956,
+      "arabic_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+      "urdu_text": "ہم تم کو آسان طریقے کی توفیق دیں گے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5956.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087008.mp3"
+    },
+    {
+      "ayah_number": 9,
+      "global_number": 5957,
+      "arabic_text": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
+      "urdu_text": "سو جہاں تک نصیحت (کے) نافع (ہونے کی امید) ہو نصیحت کرتے رہو",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5957.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087009.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087009.mp3"
+    },
+    {
+      "ayah_number": 10,
+      "global_number": 5958,
+      "arabic_text": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+      "urdu_text": "جو خوف رکھتا ہے وہ تو نصیحت پکڑے گا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5958.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087010.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087010.mp3"
+    },
+    {
+      "ayah_number": 11,
+      "global_number": 5959,
+      "arabic_text": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+      "urdu_text": "اور (بےخوف) بدبخت پہلو تہی کرے گا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5959.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087011.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087011.mp3"
+    },
+    {
+      "ayah_number": 12,
+      "global_number": 5960,
+      "arabic_text": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
+      "urdu_text": "جو (قیامت کو) بڑی (تیز) آگ میں داخل ہو گا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5960.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087012.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087012.mp3"
+    },
+    {
+      "ayah_number": 13,
+      "global_number": 5961,
+      "arabic_text": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+      "urdu_text": "پھر وہاں نہ مرے گا اور نہ جئے گا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5961.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087013.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087013.mp3"
+    },
+    {
+      "ayah_number": 14,
+      "global_number": 5962,
+      "arabic_text": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+      "urdu_text": "بے شک وہ مراد کو پہنچ گیا جو پاک ہوا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5962.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087014.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087014.mp3"
+    },
+    {
+      "ayah_number": 15,
+      "global_number": 5963,
+      "arabic_text": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
+      "urdu_text": "اور اپنے پروردگار کے نام کا ذکر کرتا رہا اور نماز پڑھتا رہا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5963.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087015.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087015.mp3"
+    },
+    {
+      "ayah_number": 16,
+      "global_number": 5964,
+      "arabic_text": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "urdu_text": "مگر تم لوگ تو دنیا کی زندگی کو اختیار کرتے ہو",
+      "juz": 30,
+      "page": 592,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5964.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087016.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087016.mp3"
+    },
+    {
+      "ayah_number": 17,
+      "global_number": 5965,
+      "arabic_text": "وَٱلْءَاخِرَةُ خَيْرٌۭ وَأَبْقَىٰٓ",
+      "urdu_text": "حالانکہ آخرت بہت بہتر اور پائندہ تر ہے",
+      "juz": 30,
+      "page": 592,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5965.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087017.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087017.mp3"
+    },
+    {
+      "ayah_number": 18,
+      "global_number": 5966,
+      "arabic_text": "إِنَّ هَٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
+      "urdu_text": "یہ بات پہلے صحیفوں میں (مرقوم) ہے",
+      "juz": 30,
+      "page": 592,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5966.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087018.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087018.mp3"
+    },
+    {
+      "ayah_number": 19,
+      "global_number": 5967,
+      "arabic_text": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
+      "urdu_text": "(یعنی) ابراہیم اور موسیٰ کے صحیفوں میں",
+      "juz": 30,
+      "page": 592,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5967.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/087019.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/087019.mp3"
+    }
+  ]
+}

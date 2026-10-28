@@ -1,0 +1,65 @@
+{
+  "surah_number": 105,
+  "name_arabic": "سُورَةُ الفِيلِ",
+  "name_english": "Al-Fil",
+  "name_urdu": "The Elephant",
+  "revelation_type": "Meccan",
+  "total_ayahs": 5,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6189,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ",
+      "urdu_text": "کیا تم نے نہیں دیکھا کہ تمہارے پروردگار نے ہاتھی والوں کے ساتھ کیا کیا",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6189.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/105001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/105001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6190,
+      "arabic_text": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍۢ",
+      "urdu_text": "کیا ان کا داؤں غلط نہیں کیا؟ (گیا)",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6190.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/105002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/105002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6191,
+      "arabic_text": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+      "urdu_text": "اور ان پر جھلڑ کے جھلڑ جانور بھیجے",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6191.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/105003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/105003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6192,
+      "arabic_text": "تَرْمِيهِم بِحِجَارَةٍۢ مِّن سِجِّيلٍۢ",
+      "urdu_text": "جو ان پر کھنگر کی پتھریاں پھینکتے تھے",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6192.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/105004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/105004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6193,
+      "arabic_text": "فَجَعَلَهُمْ كَعَصْفٍۢ مَّأْكُولٍۭ",
+      "urdu_text": "تو ان کو ایسا کر دیا جیسے کھایا ہوا بھس",
+      "juz": 30,
+      "page": 601,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6193.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/105005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/105005.mp3"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import 'screens/quran_screen.dart';
 import 'screens/names_screen.dart';
 import 'screens/tasbeeh_screen.dart';
 import 'screens/reminder_screen.dart';
+import 'screens/surah_list_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -93,13 +94,18 @@ class _QuranAppState extends State<QuranApp> {
       _showNameReminder(ctx, idx, lang);
     } else if (type == ReminderType.allahNameSingle) {
       _showNameReminder(ctx, settings.specificNameIndex, lang);
-    } else if (type == ReminderType.quranRandom) {
-      final ayahs = assets.surahData!.ayahs;
-      _showVerseReminder(ctx, ayahs[Random().nextInt(ayahs.length)], lang);
-    } else if (type == ReminderType.quranSingleVerse) {
-      final idx =
-          (settings.specificVerseIndex - 1) % assets.surahData!.ayahs.length;
-      _showVerseReminder(ctx, assets.surahData!.ayahs[idx], lang);
+    } else if (type == ReminderType.quranRandom ||
+        type == ReminderType.quranSingleVerse) {
+      if (assets.currentSurah == null) {
+        await assets.loadSurah(1);
+      }
+      final ayahs = assets.currentSurah!.ayahs;
+      if (type == ReminderType.quranRandom) {
+        _showVerseReminder(ctx, ayahs[Random().nextInt(ayahs.length)], lang);
+      } else {
+        final idx = (settings.specificVerseIndex - 1) % ayahs.length;
+        _showVerseReminder(ctx, ayahs[idx], lang);
+      }
     }
   }
 
@@ -151,12 +157,21 @@ class _QuranAppState extends State<QuranApp> {
                       audioService: audio,
                       settingsService: settings,
                     ));
+          case '/surah-list':
+            return MaterialPageRoute(
+                builder: (_) => SurahListScreen(
+                      assetManager: assets,
+                      audioService: audio,
+                      settingsService: settings,
+                    ));
           case '/quran':
+            final surahNum = routeSettings.arguments as int? ?? 1;
             return MaterialPageRoute(
                 builder: (_) => QuranScreen(
                       assetManager: assets,
                       audioService: audio,
                       settingsService: settings,
+                      surahNumber: surahNum,
                     ));
           case '/names':
             return MaterialPageRoute(

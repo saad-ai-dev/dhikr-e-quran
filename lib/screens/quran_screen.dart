@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/ayah.dart';
+import '../models/surah.dart';
 import '../services/asset_manager.dart';
 import '../services/audio_service.dart';
 import '../services/settings_service.dart';
@@ -15,12 +16,14 @@ class QuranScreen extends StatefulWidget {
   final AssetManager assetManager;
   final AudioService audioService;
   final SettingsService settingsService;
+  final int surahNumber;
 
   const QuranScreen({
     super.key,
     required this.assetManager,
     required this.audioService,
     required this.settingsService,
+    this.surahNumber = 1,
   });
 
   @override
@@ -29,7 +32,8 @@ class QuranScreen extends StatefulWidget {
 
 class _QuranScreenState extends State<QuranScreen> {
   bool _isLoading = true;
-  late String _statusMessage;
+  String _statusMessage = '';
+  Surah? _surah;
 
   String get _lang => widget.settingsService.language;
   String _s(String key) => S.get(key, _lang);
@@ -41,8 +45,8 @@ class _QuranScreenState extends State<QuranScreen> {
   @override
   void initState() {
     super.initState();
-    _statusMessage = S.get('initializing', widget.settingsService.language);
-    _loadData();
+    _statusMessage = _s('initializing');
+    _loadSurah();
   }
 
   @override
@@ -51,14 +55,14 @@ class _QuranScreenState extends State<QuranScreen> {
     super.dispose();
   }
 
-  Future<void> _loadData() async {
-    if (assets.isReady) {
-      setState(() => _isLoading = false);
-      return;
-    }
-    await assets.loadAllData(onProgress: (msg) {
-      if (mounted) setState(() => _statusMessage = msg);
-    });
+  Future<void> _loadSurah() async {
+    await assets.loadBaseData();
+    _surah = await assets.loadSurah(
+      widget.surahNumber,
+      onProgress: (msg) {
+        if (mounted) setState(() => _statusMessage = msg);
+      },
+    );
     if (mounted) setState(() => _isLoading = false);
   }
 
@@ -70,8 +74,8 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   void _copyAyah(Ayah ayah) {
-    final ref =
-        '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
+    final name = _surah?.nameArabic ?? '';
+    final ref = '$name - ${_s('ayah')} ${ayah.ayahNumber}';
     Clipboard.setData(
         ClipboardData(text: '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref'));
     ScaffoldMessenger.of(context).showSnackBar(
@@ -85,8 +89,8 @@ class _QuranScreenState extends State<QuranScreen> {
   }
 
   Future<void> _shareAyah(Ayah ayah) async {
-    final ref =
-        '${assets.surahData!.nameUrdu} - ${_s('ayah')} ${ayah.ayahNumber}';
+    final name = _surah?.nameArabic ?? '';
+    final ref = '$name - ${_s('ayah')} ${ayah.ayahNumber}';
     final text = '${ayah.arabicText}\n\n${ayah.urduText}\n\n$ref';
     final List<XFile> files = [];
 
@@ -111,12 +115,14 @@ class _QuranScreenState extends State<QuranScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          assets.isReady ? assets.surahData!.nameUrdu : _s('quranPak'),
-          style: const TextStyle(fontFamily: 'NotoNastaliqUrdu'),
+          _surah != null
+              ? '${_surah!.nameArabic} - ${_surah!.nameEnglish}'
+              : _s('quranPak'),
+          style: const TextStyle(fontFamily: 'ScheherazadeNew', fontSize: 16),
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.settings),
+            icon: const Icon(Icons.settings, size: 20),
             onPressed: () => SettingsBottomSheet.show(
               context,
               settings: settings,
@@ -138,9 +144,9 @@ class _QuranScreenState extends State<QuranScreen> {
             )
           : ListView.builder(
               padding: const EdgeInsets.only(top: 8, bottom: 16),
-              itemCount: assets.surahData!.ayahs.length,
+              itemCount: _surah!.ayahs.length,
               itemBuilder: (_, i) {
-                final ayah = assets.surahData!.ayahs[i];
+                final ayah = _surah!.ayahs[i];
                 return AyahCard(
                   ayah: ayah,
                   lang: _lang,

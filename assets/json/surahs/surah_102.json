@@ -1,0 +1,98 @@
+{
+  "surah_number": 102,
+  "name_arabic": "سُورَةُ التَّكَاثُرِ",
+  "name_english": "At-Takaathur",
+  "name_urdu": "Competition",
+  "revelation_type": "Meccan",
+  "total_ayahs": 8,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6169,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "urdu_text": "(لوگو) تم کو (مال کی) بہت سی طلب نے غافل کر دیا",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6169.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6170,
+      "arabic_text": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "urdu_text": "یہاں تک کہ تم نے قبریں جا دیکھیں",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6170.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6171,
+      "arabic_text": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "urdu_text": "دیکھو تمہیں عنقریب معلوم ہو جائے گا",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6171.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6172,
+      "arabic_text": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "urdu_text": "پھر دیکھو تمہیں عنقریب معلوم ہو جائے گا",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6172.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6173,
+      "arabic_text": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "urdu_text": "دیکھو اگر تم جانتے (یعنی) علم الیقین (رکھتے تو غفلت نہ کرتے)",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6173.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6174,
+      "arabic_text": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "urdu_text": "تم ضرور دوزخ کو دیکھو گے",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6174.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 6175,
+      "arabic_text": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "urdu_text": "پھر اس کو (ایسا) دیکھو گے (کہ) عین الیقین (آ جائے گا)",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6175.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 6176,
+      "arabic_text": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "urdu_text": "پھر اس روز تم سے (شکر) نعمت کے بارے میں پرسش ہو گی",
+      "juz": 30,
+      "page": 600,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6176.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/102008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/102008.mp3"
+    }
+  ]
+}

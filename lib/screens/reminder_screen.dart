@@ -50,7 +50,8 @@ class _ReminderScreenState extends State<ReminderScreen> {
 
   Future<void> _loadData() async {
     if (!assets.isReady) {
-      await assets.loadAllData(onProgress: (_) {});
+      await assets.loadBaseData();
+      await assets.loadSurah(1);
     }
     if (mounted) setState(() => _isLoading = false);
   }
@@ -165,7 +166,7 @@ class _ReminderScreenState extends State<ReminderScreen> {
   }
 
   void _pickSpecificVerse() {
-    final ayahs = assets.surahData?.ayahs ?? [];
+    final ayahs = assets.currentSurah?.ayahs ?? [];
     if (ayahs.isEmpty) return;
     showModalBottomSheet(
       context: context,
@@ -239,12 +240,12 @@ class _ReminderScreenState extends State<ReminderScreen> {
         _showNamePopup(settings.specificNameIndex);
         break;
       case ReminderType.quranRandom:
-        final ayahs = assets.surahData?.ayahs ?? [];
+        final ayahs = assets.currentSurah?.ayahs ?? [];
         if (ayahs.isEmpty) return;
         _showVersePopup(ayahs[Random().nextInt(ayahs.length)]);
         break;
       case ReminderType.quranSingleVerse:
-        final ayahs = assets.surahData?.ayahs ?? [];
+        final ayahs = assets.currentSurah?.ayahs ?? [];
         if (ayahs.isEmpty) return;
         final idx = (settings.specificVerseIndex - 1) % ayahs.length;
         _showVersePopup(ayahs[idx]);
@@ -424,7 +425,7 @@ class _ReminderScreenState extends State<ReminderScreen> {
                       // Show pick button when specific verse selected
                       if (_type == ReminderType.quranSingleVerse)
                         _selectedItemTile(
-                          (assets.surahData?.ayahs.isNotEmpty ?? false)
+                          (assets.currentSurah?.ayahs.isNotEmpty ?? false)
                               ? '${_s('ayah')} ${settings.specificVerseIndex}'
                               : _s('selectVerse'),
                           onTap: _pickSpecificVerse,

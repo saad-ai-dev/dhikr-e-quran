@@ -1,0 +1,197 @@
+{
+  "surah_number": 86,
+  "name_arabic": "سُورَةُ الطَّارِقِ",
+  "name_english": "At-Taariq",
+  "name_urdu": "The Morning Star",
+  "revelation_type": "Meccan",
+  "total_ayahs": 17,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 5932,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+      "urdu_text": "آسمان اور رات کے وقت آنے والے کی قسم",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5932.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 5933,
+      "arabic_text": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ",
+      "urdu_text": "اور تم کو کیا معلوم کہ رات کے وقت آنے والا کیا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5933.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 5934,
+      "arabic_text": "ٱلنَّجْمُ ٱلثَّاقِبُ",
+      "urdu_text": "وہ تارا ہے چمکنے والا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5934.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 5935,
+      "arabic_text": "إِن كُلُّ نَفْسٍۢ لَّمَّا عَلَيْهَا حَافِظٌۭ",
+      "urdu_text": "کہ کوئی متنفس نہیں جس پر نگہبان مقرر نہیں",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5935.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 5936,
+      "arabic_text": "فَلْيَنظُرِ ٱلْإِنسَٰنُ مِمَّ خُلِقَ",
+      "urdu_text": "تو انسان کو دیکھنا چاہئے کہ وہ کاہے سے پیدا ہوا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5936.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 5937,
+      "arabic_text": "خُلِقَ مِن مَّآءٍۢ دَافِقٍۢ",
+      "urdu_text": "وہ اچھلتے ہوئے پانی سے پیدا ہوا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5937.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 5938,
+      "arabic_text": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
+      "urdu_text": "جو پیٹھ اور سینے کے بیچ میں سے نکلتا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5938.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 5939,
+      "arabic_text": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌۭ",
+      "urdu_text": "بےشک خدا اس کے اعادے (یعنی پھر پیدا کرنے) پر قادر ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5939.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086008.mp3"
+    },
+    {
+      "ayah_number": 9,
+      "global_number": 5940,
+      "arabic_text": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ",
+      "urdu_text": "جس دن دلوں کے بھید جانچے جائیں گے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5940.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086009.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086009.mp3"
+    },
+    {
+      "ayah_number": 10,
+      "global_number": 5941,
+      "arabic_text": "فَمَا لَهُۥ مِن قُوَّةٍۢ وَلَا نَاصِرٍۢ",
+      "urdu_text": "تو انسان کی کچھ پیش نہ چل سکے گی اور نہ کوئی اس کا مددگار ہو گا",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5941.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086010.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086010.mp3"
+    },
+    {
+      "ayah_number": 11,
+      "global_number": 5942,
+      "arabic_text": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ",
+      "urdu_text": "آسمان کی قسم جو مینہ برساتا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5942.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086011.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086011.mp3"
+    },
+    {
+      "ayah_number": 12,
+      "global_number": 5943,
+      "arabic_text": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ",
+      "urdu_text": "اور زمین کی قسم جو پھٹ جاتی ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5943.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086012.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086012.mp3"
+    },
+    {
+      "ayah_number": 13,
+      "global_number": 5944,
+      "arabic_text": "إِنَّهُۥ لَقَوْلٌۭ فَصْلٌۭ",
+      "urdu_text": "کہ یہ کلام (حق کو باطل سے) جدا کرنے والا ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5944.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086013.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086013.mp3"
+    },
+    {
+      "ayah_number": 14,
+      "global_number": 5945,
+      "arabic_text": "وَمَا هُوَ بِٱلْهَزْلِ",
+      "urdu_text": "اور بیہودہ بات نہیں ہے",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5945.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086014.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086014.mp3"
+    },
+    {
+      "ayah_number": 15,
+      "global_number": 5946,
+      "arabic_text": "إِنَّهُمْ يَكِيدُونَ كَيْدًۭا",
+      "urdu_text": "یہ لوگ تو اپنی تدبیروں میں لگ رہے ہیں",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5946.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086015.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086015.mp3"
+    },
+    {
+      "ayah_number": 16,
+      "global_number": 5947,
+      "arabic_text": "وَأَكِيدُ كَيْدًۭا",
+      "urdu_text": "اور ہم اپنی تدبیر کر رہے ہیں",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5947.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086016.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086016.mp3"
+    },
+    {
+      "ayah_number": 17,
+      "global_number": 5948,
+      "arabic_text": "فَمَهِّلِ ٱلْكَٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا",
+      "urdu_text": "تو تم کافروں کو مہلت دو بس چند روز ہی مہلت دو",
+      "juz": 30,
+      "page": 591,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5948.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/086017.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/086017.mp3"
+    }
+  ]
+}

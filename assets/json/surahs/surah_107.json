@@ -1,0 +1,87 @@
+{
+  "surah_number": 107,
+  "name_arabic": "سُورَةُ المَاعُونِ",
+  "name_english": "Al-Maa'un",
+  "name_urdu": "Almsgiving",
+  "revelation_type": "Meccan",
+  "total_ayahs": 7,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6198,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "urdu_text": "بھلا تم نے اس شخص کو دیکھا جو (روزِ) جزا کو جھٹلاتا ہے؟",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6198.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6199,
+      "arabic_text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+      "urdu_text": "یہ وہی (بدبخت) ہے، جو یتیم کو دھکے دیتا ہے",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6199.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6200,
+      "arabic_text": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "urdu_text": "اور فقیر کو کھانا کھلانے کے لیے (لوگوں کو) ترغیب نہیں دیتا",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6200.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6201,
+      "arabic_text": "فَوَيْلٌۭ لِّلْمُصَلِّينَ",
+      "urdu_text": "تو ایسے نمازیوں کی خرابی ہے",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6201.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6202,
+      "arabic_text": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "urdu_text": "جو نماز کی طرف سے غافل رہتے ہیں",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6202.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6203,
+      "arabic_text": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+      "urdu_text": "جو ریا کاری کرتے ہیں",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6203.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 6204,
+      "arabic_text": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+      "urdu_text": "اور برتنے کی چیزیں عاریتہً نہیں دیتے",
+      "juz": 30,
+      "page": 602,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6204.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/107007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/107007.mp3"
+    }
+  ]
+}

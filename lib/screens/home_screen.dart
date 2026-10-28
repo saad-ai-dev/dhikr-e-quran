@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
             _NavItem(
                 icon: Icons.menu_book_rounded,
                 label: _s('quran'),
-                onTap: () => Navigator.pushNamed(context, '/quran')),
+                onTap: () => Navigator.pushNamed(context, '/surah-list')),
             _NavItem(
                 icon: Icons.star_rounded,
                 label: _s('names'),
@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icons.menu_book_rounded,
                       titleUrdu: _s('quranPak'),
                       subtitleUrdu: _s('surahFatiha'),
-                      onTap: () => Navigator.pushNamed(context, '/quran'),
+                      onTap: () => Navigator.pushNamed(context, '/surah-list'),
                     ),
                     FeatureCard(
                       icon: Icons.star_rounded,

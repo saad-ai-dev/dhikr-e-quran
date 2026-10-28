@@ -1,0 +1,98 @@
+{
+  "surah_number": 99,
+  "name_arabic": "سُورَةُ الزَّلۡزَلَةِ",
+  "name_english": "Az-Zalzala",
+  "name_urdu": "The Earthquake",
+  "revelation_type": "Medinan",
+  "total_ayahs": 8,
+  "ayahs": [
+    {
+      "ayah_number": 1,
+      "global_number": 6139,
+      "arabic_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "urdu_text": "جب زمین بھونچال سے ہلا دی جائے گی",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6139.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099001.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099001.mp3"
+    },
+    {
+      "ayah_number": 2,
+      "global_number": 6140,
+      "arabic_text": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "urdu_text": "اور زمین اپنے (اندر) کے بوجھ نکال ڈالے گی",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6140.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099002.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099002.mp3"
+    },
+    {
+      "ayah_number": 3,
+      "global_number": 6141,
+      "arabic_text": "وَقَالَ ٱلْإِنسَٰنُ مَا لَهَا",
+      "urdu_text": "اور انسان کہے گا کہ اس کو کیا ہوا ہے؟",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6141.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099003.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099003.mp3"
+    },
+    {
+      "ayah_number": 4,
+      "global_number": 6142,
+      "arabic_text": "يَوْمَئِذٍۢ تُحَدِّثُ أَخْبَارَهَا",
+      "urdu_text": "اس روز وہ اپنے حالات بیان کردے گی",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6142.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099004.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099004.mp3"
+    },
+    {
+      "ayah_number": 5,
+      "global_number": 6143,
+      "arabic_text": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "urdu_text": "کیونکہ تمہارے پروردگار نے اس کو حکم بھیجا (ہوگا)",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6143.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099005.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099005.mp3"
+    },
+    {
+      "ayah_number": 6,
+      "global_number": 6144,
+      "arabic_text": "يَوْمَئِذٍۢ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًۭا لِّيُرَوْا۟ أَعْمَٰلَهُمْ",
+      "urdu_text": "اس دن لوگ گروہ گروہ ہو کر آئیں گے تاکہ ان کو ان کے اعمال دکھا دیئے جائیں",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6144.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099006.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099006.mp3"
+    },
+    {
+      "ayah_number": 7,
+      "global_number": 6145,
+      "arabic_text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ",
+      "urdu_text": "تو جس نے ذرہ بھر نیکی کی ہو گی وہ اس کو دیکھ لے گا",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6145.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099007.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099007.mp3"
+    },
+    {
+      "ayah_number": 8,
+      "global_number": 6146,
+      "arabic_text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ",
+      "urdu_text": "اور جس نے ذرہ بھر برائی کی ہوگی وہ اسے دیکھ لے گا",
+      "juz": 30,
+      "page": 599,
+      "audio_primary": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6146.mp3",
+      "audio_fallback": "https://everyayah.com/data/Alafasy_128kbps/099008.mp3",
+      "urdu_audio": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/099008.mp3"
+    }
+  ]
+}
