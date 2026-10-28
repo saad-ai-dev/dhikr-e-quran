@@ -55,6 +55,10 @@ class S {
       'audioNotAvailable': 'Audio files not available, text shared only',
       'ayah': 'Ayah',
 
+      // Prayer Times
+      'prayerTimes': 'Prayer Times',
+      'retry': 'Retry',
+
       // Tasbeeh
       'tasbeeh': 'Tasbeeh',
       'tasbeehCounter': 'Dhikr Counter',
@@ -136,6 +140,10 @@ class S {
       'ayah': 'آیت',
 
       // Tasbeeh
+      // Prayer Times
+      'prayerTimes': 'نماز کے اوقات',
+      'retry': 'دوبارہ کوشش',
+
       'tasbeeh': 'تسبیح',
       'tasbeehCounter': 'ذکر کاؤنٹر',
       'tap': 'ٹیپ کریں',
