@@ -13,6 +13,7 @@ import 'screens/quran_screen.dart';
 import 'screens/names_screen.dart';
 import 'screens/tasbeeh_screen.dart';
 import 'screens/reminder_screen.dart';
+import 'screens/salah_tracker_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -167,6 +168,11 @@ class _QuranAppState extends State<QuranApp> {
           case '/tasbeeh':
             return MaterialPageRoute(
                 builder: (_) => TasbeehScreen(
+                      settingsService: settings,
+                    ));
+          case '/salah-tracker':
+            return MaterialPageRoute(
+                builder: (_) => SalahTrackerScreen(
                       settingsService: settings,
                     ));
           case '/reminder':
