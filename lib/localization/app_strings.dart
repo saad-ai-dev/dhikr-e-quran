@@ -55,6 +55,10 @@ class S {
       'audioNotAvailable': 'Audio files not available, text shared only',
       'ayah': 'Ayah',
 
+      // Qibla
+      'qibla': 'Qibla Direction',
+      'retry': 'Retry',
+
       // Tasbeeh
       'tasbeeh': 'Tasbeeh',
       'tasbeehCounter': 'Dhikr Counter',
@@ -136,6 +140,10 @@ class S {
       'ayah': 'آیت',
 
       // Tasbeeh
+      // Qibla
+      'qibla': 'قبلہ کی سمت',
+      'retry': 'دوبارہ کوشش',
+
       'tasbeeh': 'تسبیح',
       'tasbeehCounter': 'ذکر کاؤنٹر',
       'tap': 'ٹیپ کریں',
