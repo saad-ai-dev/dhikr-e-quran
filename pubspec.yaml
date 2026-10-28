@@ -31,6 +31,7 @@ flutter:
     assets:
         - assets/json/surah_fatiha.json
         - assets/json/allah_names.json
+        - assets/json/duas.json
         - assets/audio/names/
         - assets/audio/fatiha/
     fonts:

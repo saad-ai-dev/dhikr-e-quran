@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "morning",
+    "category_en": "Morning",
+    "category_ur": "صبح",
+    "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ",
+    "urdu": "ہم نے صبح کی اور صبح کی ساری بادشاہی اللہ کے لیے ہے اور تمام تعریف اللہ کے لیے ہے",
+    "transliteration": "Asbahna wa asbahal mulku lillah, walhamdulillah",
+    "reference": "Muslim 2723"
+  },
+  {
+    "id": 2,
+    "category": "morning",
+    "category_en": "Morning",
+    "category_ur": "صبح",
+    "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ",
+    "urdu": "اے اللہ! تیری مہربانی سے ہم نے صبح کی اور تیری مہربانی سے شام کی، تیری مہربانی سے ہم جیتے ہیں اور تیری مہربانی سے مرتے ہیں اور تیری طرف اٹھ کر جانا ہے",
+    "transliteration": "Allahumma bika asbahna, wa bika amsayna, wa bika nahya, wa bika namootu, wa ilaykan nushoor",
+    "reference": "Tirmidhi 3391"
+  },
+  {
+    "id": 3,
+    "category": "evening",
+    "category_en": "Evening",
+    "category_ur": "شام",
+    "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ",
+    "urdu": "ہم نے شام کی اور شام کی ساری بادشاہی اللہ کے لیے ہے اور تمام تعریف اللہ کے لیے ہے",
+    "transliteration": "Amsayna wa amsal mulku lillah, walhamdulillah",
+    "reference": "Muslim 2723"
+  },
+  {
+    "id": 4,
+    "category": "sleep",
+    "category_en": "Before Sleep",
+    "category_ur": "سونے سے پہلے",
+    "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+    "urdu": "اے اللہ! تیرے نام سے مرتا ہوں اور جیتا ہوں",
+    "transliteration": "Bismika Allahumma amootu wa ahya",
+    "reference": "Bukhari 6324"
+  },
+  {
+    "id": 5,
+    "category": "wakeup",
+    "category_en": "Waking Up",
+    "category_ur": "جاگنے پر",
+    "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "urdu": "تمام تعریفیں اللہ کے لیے ہیں جس نے ہمیں مارنے کے بعد زندہ کیا اور اسی کی طرف لوٹ کر جانا ہے",
+    "transliteration": "Alhamdulillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushoor",
+    "reference": "Bukhari 6312"
+  },
+  {
+    "id": 6,
+    "category": "food",
+    "category_en": "Before Eating",
+    "category_ur": "کھانے سے پہلے",
+    "arabic": "بِسْمِ اللَّهِ وَعَلَى بَرَكَةِ اللَّهِ",
+    "urdu": "اللہ کے نام سے اور اللہ کی برکت پر",
+    "transliteration": "Bismillahi wa 'ala barakatillah",
+    "reference": "Abu Dawud 3767"
+  },
+  {
+    "id": 7,
+    "category": "food",
+    "category_en": "After Eating",
+    "category_ur": "کھانے کے بعد",
+    "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+    "urdu": "تمام تعریفیں اللہ کے لیے ہیں جس نے مجھے یہ کھلایا اور مجھے رزق دیا بغیر میری طاقت اور قوت کے",
+    "transliteration": "Alhamdulillahil-ladhi at'amani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah",
+    "reference": "Tirmidhi 3458"
+  },
+  {
+    "id": 8,
+    "category": "travel",
+    "category_en": "Travel",
+    "category_ur": "سفر",
+    "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+    "urdu": "پاک ہے وہ ذات جس نے اس کو ہمارے قابو میں کر دیا اور ہم اس کو قابو میں نہیں کر سکتے تھے اور ہم اپنے رب کی طرف لوٹ کر جانے والے ہیں",
+    "transliteration": "Subhanal-ladhi sakh-khara lana hadha wa ma kunna lahu muqrinin, wa inna ila Rabbina lamunqaliboon",
+    "reference": "Quran 43:13-14"
+  },
+  {
+    "id": 9,
+    "category": "difficulty",
+    "category_en": "In Difficulty",
+    "category_ur": "مشکل میں",
+    "arabic": "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+    "urdu": "تیرے سوا کوئی معبود نہیں، تو پاک ہے، بے شک میں ظالموں میں سے تھا",
+    "transliteration": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin",
+    "reference": "Quran 21:87"
+  },
+  {
+    "id": 10,
+    "category": "protection",
+    "category_en": "Protection",
+    "category_ur": "حفاظت",
+    "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+    "urdu": "میں اللہ کے مکمل کلمات کے ذریعے اس کی مخلوقات کے شر سے پناہ مانگتا ہوں",
+    "transliteration": "A'udhu bi kalimatillahit-tammati min sharri ma khalaq",
+    "reference": "Muslim 2708"
+  },
+  {
+    "id": 11,
+    "category": "mosque",
+    "category_en": "Entering Mosque",
+    "category_ur": "مسجد میں داخل ہونا",
+    "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+    "urdu": "اے اللہ! میرے لیے اپنی رحمت کے دروازے کھول دے",
+    "transliteration": "Allahummaf-tah li abwaba rahmatik",
+    "reference": "Muslim 713"
+  },
+  {
+    "id": 12,
+    "category": "mosque",
+    "category_en": "Leaving Mosque",
+    "category_ur": "مسجد سے نکلنا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+    "urdu": "اے اللہ! میں تجھ سے تیرا فضل مانگتا ہوں",
+    "transliteration": "Allahumma inni as'aluka min fadlik",
+    "reference": "Muslim 713"
+  }
+]
