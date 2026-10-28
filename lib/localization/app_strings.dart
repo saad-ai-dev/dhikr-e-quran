@@ -55,6 +55,9 @@ class S {
       'audioNotAvailable': 'Audio files not available, text shared only',
       'ayah': 'Ayah',
 
+      // Hadith
+      'hadith': 'Hadith',
+
       // Tasbeeh
       'tasbeeh': 'Tasbeeh',
       'tasbeehCounter': 'Dhikr Counter',
@@ -136,6 +139,9 @@ class S {
       'ayah': 'آیت',
 
       // Tasbeeh
+      // Hadith
+      'hadith': 'حدیث',
+
       'tasbeeh': 'تسبیح',
       'tasbeehCounter': 'ذکر کاؤنٹر',
       'tap': 'ٹیپ کریں',
